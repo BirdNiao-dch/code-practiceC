@@ -1,0 +1,10 @@
+﻿生成开始于 11:05...
+1>------ 已启动生成: 项目: guess, 配置: Release x64 ------
+1>  guess.c
+1>  正在生成代码
+1>  Previous IPDB not found, fall back to full compilation.
+1>  All 10 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+1>  已完成代码的生成
+1>  guess.vcxproj -> E:\code\2026.7practice\guess\x64\Release\guess.exe
+========== 生成: 1 成功，0 失败，0 最新，0 已跳过 ==========
+========== 生成 于 11:05 完成，耗时 00.848 秒 ==========
