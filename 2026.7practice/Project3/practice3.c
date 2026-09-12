@@ -77,16 +77,46 @@ int main()
 
                     return 0;
             }*/
-  /*  int n = 2;
+            /*  int n = 2;
 
-    switch (n) {
-    case 1: printf("1");
-    case 2: printf("2");
-    case 3: printf("3"); break;
-    default: printf("D");
+              switch (n) {
+              case 1: printf("1");
+              case 2: printf("2");
+              case 3: printf("3"); break;
+              default: printf("D");
 
-        return 0;
-    }
-}*/
-    int count = 0;
-    for (int i = 1; i<=100；i++)
+                  return 0;
+              }
+          }*/
+          /*int count = 0;
+          for (int i = 1; i<=100；i++)*/
+          //
+          //    int math[20];
+          //    char ch[10];
+          //    double weight[30];
+          //
+          //    return 0;
+          //}
+              //double d[5] = { 1,2,3,4,5};
+//
+//    int arr[] = { 1,2,3,4,5,6,7,8,9,10 };
+//    int i = 0;
+//    for (i = 0;i < 10;i++)
+//
+//        printf("%d", arr[i]);
+//
+//    return 0;
+//}
+//输入
+//    int arr[10] = { 0 };
+//    int i = 0;
+//    for (i = 0;i < 10;i++);
+//    {
+//        scanf("%d", arr[i]);
+//    }
+//    for (i = 0;i < 10; i++);
+//    {
+//        printf("%d", arr[i]);
+//    }
+//    return 0;
+//}
