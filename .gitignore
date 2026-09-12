@@ -14,3 +14,11 @@ Release/
 # 系统垃圾
 Thumbs.db
 .DS_Store
+
+# 补充 Visual Studio 垃圾清理
+.vs/
+*.suo
+*.db
+*.bin
+*.json
+*.pdb
