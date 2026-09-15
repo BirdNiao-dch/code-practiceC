@@ -26,25 +26,6 @@
 //	return 0;
 //}
 
-//#include<stdio.h>
-//int main(void)
-//{
-//	int a = 0;
-//	scanf("%d", &a);
-//
-//	if (a >= 90)
-//		printf("A\n");
-//	else if (a >= 80 && a < 90)
-//		printf("B\n");
-//	else if (a >= 70 && a < 80)
-//		printf("C\n");
-//	else if (a >= 60 && a < 70)
-//		printf("D\n");
-//	else if (0<=a&&a< 60)
-//		printf("E\n");
-//	return 0;
-//
-//}
 
 //#include<stdio.h>
 //int main()
@@ -98,5 +79,54 @@
 //	scanf("%lf",&R);
 //	s = 3.14159 * R * R;
 //	printf("%.3f", s);
+//	return 0;
+//}
+
+//#include<stdio.h>
+//int main()
+//{
+//	int L1, L2, L3;
+//	int V = 0;
+//	for(int i = 0 ; i<2 ; i++){
+//		scanf("%d%d%d",&L1,&L2,&L3);
+//		V = L1 * L2 * L3;
+//		printf("%d\n", V);
+//	}
+//	return 0;
+//}
+
+//Description   1008
+//对于每个输入的正整数，判断是否能被3整除，能输出“Yes”，不能就输出”No“。
+//Input
+//有若干行，每行一个待判断的正整数。
+//Output
+//对于每一行对应输出一个结果“Yes”或“No”。
+//#include<stdio.h>
+//int main()
+//{
+//	int a = 0;
+//	while (scanf("%d",&a) != EOF) {
+//		if (a % 3 == 0)
+//			printf("Yes\n");
+//		else
+//			printf("No\n");
+//	}
+//		
+//	return 0;
+//}
+
+//1009Description
+//任意输入一个正整数，请你编程指出它的个位数。
+//Input
+//有若干行，每行一个正整数。
+//Output
+//每行对应输出个位数。
+//#include<stdio.h>
+//int main()
+//{
+//	int a = 0;
+//	while (scanf("%d", &a) != EOF) {
+//		printf("%d\n", a % 10);
+//	}
 //	return 0;
 //}
