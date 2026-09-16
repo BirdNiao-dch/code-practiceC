@@ -115,7 +115,7 @@
 //	return 0;
 //}
 
-//1009Description
+//1009  Description
 //任意输入一个正整数，请你编程指出它的个位数。
 //Input
 //有若干行，每行一个正整数。
@@ -127,6 +127,116 @@
 //	int a = 0;
 //	while (scanf("%d", &a) != EOF) {
 //		printf("%d\n", a % 10);
+//	}
+//	return 0;
+//}
+
+//escription
+//素数是指只能被1和本身整除的数。输入若干个正整数，请你分别判断他们是否为素数。
+//注意：1不是素数。
+//Input
+//有若干行，每行一个正整数。
+//Output
+//对于每一行对应输出一个结果“Yes”或“No”。
+//Sample Input
+//#include<stdio.h>
+//int main()
+//{
+//	int a = 0;
+//	while (scanf("%d", &a) != EOF) {
+//		if (a % 1 == 1 && a % a == 1)
+//			printf("Yes\n");
+//		else
+//			printf("No\n");
+//
+//	}
+//	return 0;
+//}
+
+//#include<stdio.h>
+//int main() {
+//	double x = 0;
+//	double y = 0;
+//	while (scanf("%lf", &x) != EOF) {
+//		y = 1.0 + 1.0 / (1.0 + 1.0 / x);
+//		printf("%.2lf\n", y);
+//	}
+//		return 0;
+//}
+
+//#include <stdio.h>
+//#include <math.h>
+//int main() {
+//    double pi = 3.1415926;
+//    double y = (log(5.0 * log(3.0) )- log(2.0)) / sin(pi / 3.0);
+//    printf("%.3f\n", y);
+//    return 0;
+//}
+
+//#include<stdio.h>
+//int main() {
+//	printf("!@#$~%%^&*()_+|\\=-\"\":");
+//	return 0;
+//}
+
+//#include<stdio.h>
+//#include<math.h>
+//int main() {
+//	double PI = 3.1415926;
+//	int x = 0;
+//	whlie(scanf("%d", &x) != EOF) {
+//		double Sum = 0.0;
+//		double rad = x * PI / 180.0;
+//		Sum = sin(rad) + cos(rad) + tan(rad) + 1.0/tan(rad) + 1.0/sin(rad) + 1.0/cos(rad);
+//		printf("Sum=%.2f\n", Sum);
+//	}
+//	return 0;
+//}
+
+//#include <stdio.h>
+//#include <math.h>
+//
+//int main() {
+//    double PI = 3.1415926;
+//    int x = 0;
+//
+//    while (scanf("%d", &x) != EOF) {
+//        double Sum = 0.0;
+//        double rad = x * PI / 180.0;
+//
+//        Sum = sin(rad) + cos(rad) + tan(rad) + 1.0 / tan(rad) + 1.0 / sin(rad) + 1.0 / cos(rad);
+//
+//        printf("Sum=%.2f\n", Sum);
+//    }
+//
+//    return 0;
+//}
+
+//#include<stdio.h>
+//int main() {
+//	char grade;
+//	while (scanf(" %c", &grade)!=EOF) {
+//		switch (grade)
+//		{
+//		case 'A':
+//			printf("90~100\n");
+//			break;
+//		case 'B':
+//			printf("80~89\n");
+//			break;
+//		case 'C':
+//			printf("70~79\n");
+//			break;
+//		case 'D':
+//			printf("60~69\n");
+//			break;
+//		case 'E':
+//			printf("0~59\n");
+//			break;
+//		default:
+//			printf("error\n");
+//			break;
+//		}
 //	}
 //	return 0;
 //}
