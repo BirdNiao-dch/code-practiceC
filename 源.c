@@ -212,7 +212,7 @@
 //    return 0;
 //}
 
-//#include<stdio.h>
+//#include<stdio.h> 1027
 //int main() {
 //	char grade;
 //	while (scanf(" %c", &grade)!=EOF) {
@@ -237,6 +237,64 @@
 //			printf("error\n");
 //			break;
 //		}
+//	}
+//	return 0;
+//}
+
+//#include<stdio.h> 1032
+//#include<math.h>
+//int main() {
+//	int n;
+//	scanf("%d", &n);
+//	while (n--) {
+//		double a = 0.0;
+//		double b = 0.0;
+//		double ans = 0.0;
+//		scanf("%lf %lf", &a, &b);
+//		ans = a * b;
+//		if (fabs(ans) < 0.0005) {
+//			ans = 0.0;
+//		}
+//		printf("%.3f\n", ans);
+//	}
+//	return 0;
+//}
+//#include<stdio.h> 1010
+//int main() {
+//	int a, b, c,t;
+//	while (scanf("%d%d%d", &a, &b, &c) != EOF) {
+//		if (a > b) { t = a;a = b;b = t; }
+//		if (a > c) { t = a;a = c;c = t; }
+//		if (b > c) { t = b;b = c;c = t; }
+//		printf("%d %d %d\n", a, b, c);
+//	}
+//
+//	return 0;
+//}
+
+//#include<stdio.h>  1015
+//int main() {
+//	int n, i;
+//	while (scanf("%d",&n) != EOF) {
+//		double sum = 0.0;
+//		for (i = 1; i <= n; i++) {
+//			sum = sum + 1.0 / i;
+//		}
+//		printf("%.2f\n", sum);	
+//	}
+//	return 0;
+//}
+//
+//#include<stdio.h>
+//#include<math.h>
+//int main() {
+//	int i, n;
+//	while (scanf("%d", &n) != EOF) {
+//		double sum = 0.0;
+//		for (i = 1; i <= n;i++) {
+//			sum = sum + 1.0 / i * pow((-1), (i + 1));
+//		}
+//		printf("%.2f\n",sum);
 //	}
 //	return 0;
 //}
