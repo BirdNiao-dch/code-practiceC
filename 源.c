@@ -313,3 +313,30 @@
 //	}
 //	return 0;
 //}
+
+//1012 素数
+//#include<stdio.h>
+//int main() {
+//	int i,n,flag;
+//	while (scanf("%d", &n) != EOF) {
+//		if (n <= 1 && n  > 0) {
+//			printf("No\n");
+//			continue;
+//		}
+//		flag = 1;
+//		for (i = 2;i < n; i++) {
+//			if (n % i == 0) {
+//				flag = 0;
+//				break;
+//			}
+//		}
+//		if (flag == 1) {
+//			printf("Yes\n");
+//		}
+//		else {
+//			printf("No\n");
+//		}
+//	}
+//		
+//	return 0;
+//}
