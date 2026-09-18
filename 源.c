@@ -298,3 +298,18 @@
 //	}
 //	return 0;
 //}
+
+//1024
+//#include<stdio.h>
+//int main() {
+//	int a = 0;
+//	while (scanf("%d",&a) != EOF) {
+//		int count = 0;
+//		while (a > 0) {
+//			count++;
+//			a = a / 10;
+//		}
+//		printf("%d\n", count);
+//	}
+//	return 0;
+//}
