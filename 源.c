@@ -340,3 +340,42 @@
 //		
 //	return 0;
 //}
+
+//1066 直角三角形
+//#include<stdio.h>
+//int main() {
+//	int i = 0;
+//	int n = 0;
+//	int j = 0;
+//	while (scanf("%d", &n) != EOF&&n!=0) {
+//		for (i = 1;i <= n;i++) {
+//			for (j = 1;j <= i;j ++) {
+//				printf("*");
+//			}
+//			printf("\n");
+//		}
+//		printf("\n");
+//	}
+//	return 0;
+//}
+
+//1011三角形的面积
+#include<stdio.h>
+#include<math.h>
+int main() {
+	double a, b, c, p, s;
+	while (scanf("%lf%lf%lf", &a,&b,&c) != EOF) {
+		if (a == 0 && b == 0 && c == 0) {
+			break;
+		}
+		p = (a + b + c)/2.0;
+		s = sqrt(p * (p - a) * (p - b) * (p - c));
+		if (a + b > c && a + c > b && b + c > a) {
+			printf("%.2f\n", s);
+		}
+		else {
+			printf("No\n");
+		}
+	}
+	return 0;
+}
