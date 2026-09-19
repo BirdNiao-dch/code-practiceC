@@ -1,6 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-int main(void) {
+//int main(void) {
 	//提示输入一个ASCII码值，然后打印输入的字符
 	/*int input;
 	printf("enter a value of char int ASCII:");
@@ -23,4 +23,55 @@ int main(void) {
 	scanf("%c", &ch);
 	printf("the code for% c is% d.\n", ch, ch);
 	return 0;*/
+
+	//4.1前导程序
+//#include <string.h>  //提供strlen()函数的原型G
+//#define DENSITY 62.4
+//int main(void)
+//{
+//	float weight, volume;
+//	int size, letters;
+//	char name[40];
+//
+//	printf("Hi!What's your first name?\n");
+//	scanf("%s", name);
+//	printf("$s,what's your weight in pounds?\n");
+//	scanf("%f", &weight);
+//	size = sizeof(name);
+//	letters = strlen(name);
+//	volume = weight / DENSITY;
+//	printf("Well,%s,your volume is %2.2f cubic feet.\n", name, volume);
+//	printf("Also,your first name has %d letters,\n", letters);
+//	printf("and we have &d bytes to store it.\n", letters);
+//
+//	return 0;
+//}
+
+//测试 primer p110 5.3.5
+//#include<stdio.h>
+//int main() {
+//	int y = 2;
+//	int n = 3;
+//	int nextnum = 0;
+//	nextnum = (y + n++) * 6;
+//	printf("%d\n", nextnum);
+//
+//	return 0;
+//}
+
+//#include<stdio.h>
+//int main(void) {
+//	int a,i = 0;
+//	printf("输入一个整数：");
+//	scanf("%d", &a);
+//	while (i ++<11) {
+//		printf("%d\n",a++);
+//	}
+//	return 0;
+//}
+
+#include<stdio.h>
+int main() {
+
+	return 0;
 }
