@@ -70,8 +70,34 @@
 //	return 0;
 //}
 
+//整数求逆
+//#include<stdio.h>
+//int main() {
+//	int x = 0;
+//	int n = 0;
+//	scanf("%d", &x);
+//	while (x > 0) {
+//		n = x % 10;
+//		x /= 10;
+//		printf("%d",n );
+//	}
+//
+//	return 0;
+//}只能打印，不能实现算出整个新的数字
+
 #include<stdio.h>
-int main() {
+int main(void) {
+	int x = 0;
+	int n = 0;
+	int ret = 0;
+	scanf("%d", &x);
+	while (x > 0) {
+		n = x % 10;
+		x /= 10;
+		ret = ret * 10 + n;
+	}
+		printf("%d\n", ret);
 
 	return 0;
 }
+
