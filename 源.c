@@ -1,5 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS
-//#include<stdio.h>
+//#include<stdio.h> 1002
 //int main()
 //{
 //	int n = 0;
@@ -13,7 +13,7 @@
 //	return 0;
 //
 //}
-//#include<stdio.h>
+//#include<stdio.h> 1004
 //int main(void)
 //{
 //	int a = 0;
@@ -27,7 +27,7 @@
 //}
 
 
-//#include<stdio.h>
+//#include<stdio.h>   1541
 //int main()
 //{
 //	int a;
@@ -360,22 +360,66 @@
 //}
 
 //1011三角形的面积
+//#include<stdio.h>
+//#include<math.h>
+//int main() {
+//	double a, b, c, p, s;
+//	while (scanf("%lf%lf%lf", &a,&b,&c) != EOF) {
+//		if (a == 0 && b == 0 && c == 0) {
+//			break;
+//		}
+//		p = (a + b + c)/2.0;
+//		s = sqrt(p * (p - a) * (p - b) * (p - c));
+//		if (a + b > c && a + c > b && b + c > a) {
+//			printf("%.2f\n", s);
+//		}
+//		else {
+//			printf("No\n");
+//		}
+//	}
+//	return 0;
+//}
+
+//1035
+//#include<stdio.h>
+//#include<stdlib.h>
+//int main() {
+//	int a, b, c, d,s;
+//		while (scanf("%d%d%d%d", &a,& b,& c,& d) != EOF){
+//			int e = abs(a - c);
+//			int f = abs(b - d);
+//			s = e * f;
+//			printf("%d\n", s);
+//			}
+//	return 0;
+//}
+
+//#include<stdio.h>
+//#include<math.h>
+//int main() {
+//	double a, b, c, d;
+//	double f, g;
+//	double e;
+//	while (scanf("%lf%lf%lf%lf",&a, &b, &c, &d) != EOF) {
+//		f = fabs(a - c);
+//		g = fabs(b - d);
+//		e = sqrt(f*f+g*g);
+//		printf("%.2f\n", e);
+//	}
+//	return 0;
+//}
+
 #include<stdio.h>
 #include<math.h>
+#define PI 3.1415926535897932384626
 int main() {
-	double a, b, c, p, s;
-	while (scanf("%lf%lf%lf", &a,&b,&c) != EOF) {
-		if (a == 0 && b == 0 && c == 0) {
-			break;
-		}
-		p = (a + b + c)/2.0;
-		s = sqrt(p * (p - a) * (p - b) * (p - c));
-		if (a + b > c && a + c > b && b + c > a) {
-			printf("%.2f\n", s);
-		}
-		else {
-			printf("No\n");
-		}
+	double a, b, c,d,rad,A;
+	while (scanf("%lf%lf%lf", &a, &b, &c) != EOF) {
+		d = (b * b + c * c - a * a) / (2*b*c);
+		rad = acos(d);
+		A = rad * 180.0 / PI;
+		printf("%.1f\n", A);
+
 	}
 	return 0;
 }
