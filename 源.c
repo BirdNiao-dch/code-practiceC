@@ -557,26 +557,26 @@
 //    return 0;
 //}
 
- #include <stdio.h>
- int main() {
- int h, m;
- while (scanf("%d:%d", &h, &m)==2) {
-    if (h < 0 || h > 23 || m < 0 || m > 59) { 
-         printf("输入时间不合理.\n");
-         }
-         else if (h == 0) {                      
-             printf("%d:%dAM\n", 12, m);
-         }
-         else if (h < 12) {                 
-             printf("%d:%dAM\n", h, m);
-         }
-         else if (h == 12) {
-                        
-             printf("%d:%dPM\n", 12, m);
-         }
-         else {
-             printf("%d:%dPM\n", h - 12, m);
-         }
-                }
-                return 0;
- }
+//#include <stdio.h>
+//int main() {
+//    int h, m;
+//    while (scanf("%d:%d", &h, &m) == 2) {
+//        if (h < 0 || h > 23 || m < 0 || m > 59) {
+//            printf("输入时间不合理.\n");
+//        }
+//        else if (h == 0) {
+//            printf("%d:%02dAM\n", 0, m);
+//        }
+//        else if (h < 12) {
+//            printf("%d:%02dAM\n", h, m);
+//        }
+//        else if (h == 12) {
+//
+//            printf("%d:%02dPM\n", 12, m);
+//        }
+//        else {
+//            printf("%d:%02dPM\n", h - 12, m);
+//        }
+//    }
+//    return 0;
+//}
