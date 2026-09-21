@@ -409,17 +409,39 @@
 //	return 0;
 //}
 
+//#include<stdio.h>
+//#include<math.h>
+//#define PI 3.1415926535897932384626
+//int main() {
+//	double a, b, c,d,rad,A;
+//	while (scanf("%lf%lf%lf", &a, &b, &c) != EOF) {
+//		d = (b * b + c * c - a * a) / (2*b*c);
+//		rad = acos(d);
+//		A = rad * 180.0 / PI;
+//		printf("%.1f\n", A);
+//
+//	}
+//	return 0;
+//}
+
 #include<stdio.h>
-#include<math.h>
-#define PI 3.1415926535897932384626
 int main() {
-	double a, b, c,d,rad,A;
-	while (scanf("%lf%lf%lf", &a, &b, &c) != EOF) {
-		d = (b * b + c * c - a * a) / (2*b*c);
-		rad = acos(d);
-		A = rad * 180.0 / PI;
-		printf("%.1f\n", A);
+	int n = 0;
+	while (scanf("%d", &n) != EOF&&n!=0) {
+		int a = 2;
+		int b = 1;
+		int c;
+		double sum = 0.0;
+		int i = 0;
+		for (i = 0;i < n;i++) {
+			sum = sum + (double)a / b;
+			c = a;
+			a += b;
+			b = c;
+		}
+		printf("%.2f\n", sum);
 
 	}
+
 	return 0;
 }
