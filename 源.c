@@ -423,25 +423,136 @@
 //	}
 //	return 0;
 //}
+//
+//#include<stdio.h>  1043
+//int main() {
+//	int n = 0;
+//	while (scanf("%d", &n) != EOF&&n!=0) {
+//		int a = 2;
+//		int b = 1;
+//		int c;
+//		double sum = 0.0;
+//		int i = 0;
+//		for (i = 0;i < n;i++) {
+//			sum = sum + (double)a / b;
+//			c = a;
+//			a += b;
+//			b = c;
+//		}
+//		printf("%.2f\n", sum);
+//
+//	}
+//
+//	return 0;
+//}
 
-#include<stdio.h>
-int main() {
-	int n = 0;
-	while (scanf("%d", &n) != EOF&&n!=0) {
-		int a = 2;
-		int b = 1;
-		int c;
-		double sum = 0.0;
-		int i = 0;
-		for (i = 0;i < n;i++) {
-			sum = sum + (double)a / b;
-			c = a;
-			a += b;
-			b = c;
-		}
-		printf("%.2f\n", sum);
+//#include<stdio.h>   1046
+//int n = 0;
+//int main() {
+//	while (scanf("%d", &n) != EOF) {
+//		int b = 1;
+//		int c = 1;
+//		double sum = 0.0;
+//		int i = 0;
+//		for (i = 1;i <= n;i++) {
+//			sum = sum + c * 1.0/ b;
+//			b = b + 2;
+//			c = -c;
+//		}
+//		printf("π/4 ≈ %.8f\n", sum);
+//	}
+//	return 0;
+//}
+//
+//#include<stdio.h>
+//int main() {
+//	int n,i;
+//	int m;
+//	while (scanf("%d", &n) != EOF&&n>0) {
+//		int T = 1;
+//		for (i = 1;i <= n;i++) {
+//			T = T * i;
+//		}
+//
+//		printf("%d\n", T);
+//
+//	}
+//	return 0;
+//}
+//
 
-	}
+//#include <stdio.h> 1022
+//int main(void) {
+//    int n, first = 1;
+//    while (scanf("%d", &n) == 1) {
+//        if (n % 6 == 0 && n % 11 != 0) {
+//            if (!first) putchar(' ');
+//            printf("%d", n);
+//            first = 0;
+//        }
+//    }
+//    putchar('\n');
+//    return 0;
+//}
 
-	return 0;
-}
+//#include<stdio.h>  1196
+//int main(void) {
+//	double x = 0.0;
+//	double n = 0.0;
+//	while (scanf("%lf", &x) != EOF) {
+//		if (x <= 3) {
+//			n = 6.00;
+//			printf("%.2f\n", n);
+//		}
+//		else {
+//			n = 6.0 + (x - 3.0) * 1.4;
+//			printf("%.2f\n", n);
+//		}
+//	}
+//	return 0;
+//}
+
+//#include<stdio.h>
+//int main() {
+//	double n =0.0;
+//	while (scanf("%lf", &n) != EOF) {
+//		if (n >= 95) {
+//			printf("A+\n");
+//		}
+//		else if (n >= 90) {
+//			printf("A\n");
+//		}
+//		else if (n >= 85) {
+//			printf("A-\n");
+//		}
+//		else if (n >= 80) {
+//			printf("B+\n");
+//		}
+//		else if (n >= 75) {
+//			printf("B\n");
+//		}
+//		else if (n >= 70) {
+//			printf("B-\n");
+//		}
+//		else if (n >= 60) {
+//			printf("C\n");
+//		}
+//		else {
+//			printf("D\n");
+//		}
+//	}
+//	return 0;
+//}
+//#include<stdio.h> 1449
+//int main() {
+//    int year = 0;
+//    while (scanf("%d", &year) != EOF) {
+//        if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
+//            printf("%d是闰年。\n", year);
+//        }
+//        else {
+//            printf("%d不是闰年。\n", year);
+//        }
+//    }
+//    return 0;
+//}
