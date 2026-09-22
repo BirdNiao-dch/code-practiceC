@@ -543,6 +543,7 @@
 //	}
 //	return 0;
 //}
+// 
 //#include<stdio.h> 1449
 //int main() {
 //    int year = 0;
@@ -580,3 +581,22 @@
 //    }
 //    return 0;
 //}
+
+#include<stdio.h>
+int main() {
+	int x = 0;
+	int y = 0;
+	while (scanf("%d", &x) != EOF) {
+		if (x < 1) {
+			y = x;
+		}
+		else if (x >= 1 && x < 10) {
+			y = 2 * x - 1;
+		}
+		else {
+			y = 10;
+		}
+		printf("y = %d\n", y);
+	}
+	return 0;
+}
