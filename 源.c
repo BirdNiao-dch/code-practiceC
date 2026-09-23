@@ -582,21 +582,52 @@
 //    return 0;
 //}
 
+//#include<stdio.h>
+//int main() {
+//	int x = 0;
+//	int y = 0;
+//	while (scanf("%d", &x) != EOF) {
+//		if (x < 1) {
+//			y = x;
+//		}
+//		else if (x >= 1 && x < 10) {
+//			y = 2 * x - 1;
+//		}
+//		else {
+//			y = 10;
+//		}
+//		printf("y = %d\n", y);
+//	}
+//	return 0;
+//}
+
+//#include<stdio.h>
+//int main() {
+//	char n;
+//	char m;
+//	while (scanf(" %c",&n) != EOF) {
+//		m = n + 1;
+//		printf("result:%c\n", m);
+//	}
+//	return 0;
+//}
+
 #include<stdio.h>
+#include<math.h>
 int main() {
-	int x = 0;
-	int y = 0;
-	while (scanf("%d", &x) != EOF) {
+	double x = 0.0;
+	double y = 0.0;
+	while (scanf("%lf", &x) != EOF) {
 		if (x < 1) {
-			y = x;
+			y = fabs(x);
 		}
-		else if (x >= 1 && x < 10) {
-			y = 2 * x - 1;
+		else if (x >= 1 && x <= 10) {
+			y = x * x - 1.0;
 		}
 		else {
-			y = 10;
+			y = 2 * x + 1;
 		}
-		printf("y = %d\n", y);
+		printf("y=%.2f\n", y);
 	}
 	return 0;
 }
