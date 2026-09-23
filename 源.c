@@ -612,22 +612,55 @@
 //	return 0;
 //}
 
+//#include<stdio.h>
+//#include<math.h>
+//int main() {
+//	double x = 0.0;
+//	double y = 0.0;
+//	while (scanf("%lf", &x) != EOF) {
+//		if (x < 1) {
+//			y = fabs(x);
+//		}
+//		else if (x >= 1 && x <= 10) {
+//			y = x * x - 1.0;
+//		}
+//		else {
+//			y = 2 * x + 1;
+//		}
+//		printf("y=%.2f\n", y);
+//	}
+//	return 0;
+//}
+
+//#include<stdio.h>
+//#include<math.h>
+//int main() {
+//	double x;
+//	while (scanf("%lf", &x) != EOF) {
+//		int i = 1;
+//		double sum = 1.0;
+//		double term = 1.0;
+//			for (i = 1;fabs(term)>1e-16;i++) {
+//				term = term * ((-x) * x) / ((2 * i - 1) * (2 * i));
+//				sum += term;
+//			}
+//			printf("%.2f\n", sum);
+//	}
+//	return 0;
+//}
+
 #include<stdio.h>
-#include<math.h>
 int main() {
-	double x = 0.0;
-	double y = 0.0;
-	while (scanf("%lf", &x) != EOF) {
-		if (x < 1) {
-			y = fabs(x);
+	int x = 0;
+	int y = 0;
+	int z = 0;
+	for (x = 0;x <= 20;x ++) {
+		for (y = 0;y <= 33;y++) {
+			z = 100 - y - x;
+			if (z>=0 && z%3 == 0&&5 * x + 3 * y + z * 1 / 3 == 100) {
+				printf("公鸡%d只,母鸡%d只,小鸡%d只\n", x, y, z);
+			}
 		}
-		else if (x >= 1 && x <= 10) {
-			y = x * x - 1.0;
-		}
-		else {
-			y = 2 * x + 1;
-		}
-		printf("y=%.2f\n", y);
 	}
 	return 0;
 }
