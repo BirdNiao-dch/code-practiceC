@@ -691,7 +691,7 @@
 //}
 //
 //#include<stdio.h>
-//#include<math.h>
+//#include<math.h>2299
 //int main() {
 //	int a = 0;
 //	int b = 0;
@@ -706,29 +706,72 @@
 //		printf("商是%.6f,第二位小数是%d\n", c,d);
 //	}
 //	return 0;
+////}
+//#include<stdio.h>3000
+//int main() {
+//	double a, b,c;
+//	while (scanf("%lf%lf", &a, &b) == 2) {
+//		if (a <= 0 || b <= 0) {
+//			continue;
+//		}
+//		c = a / (b * b);
+//		if (c < 18.5) {
+//			printf("BMI=%.2f，体型：偏瘦\n",c);
+//		}
+//		else if (c >= 18.5 && c < 24) {
+//			printf("BMI=%.2f，体型：正常\n",c);
+//		}
+//		else if (c >= 24 && c < 28) {
+//			printf("BMI=%.2f，体型：超重\n",c);
+//
+//		}
+//		else {
+//			printf("BMI=%.2f，体型：肥胖\n",c);
+//
+//		}
+//	}
+//	return 0;
+//}
+
+//#include<stdio.h>
+//int main() {
+//	int a = 0;
+//	while(scanf("%d",&a)!=EOF){
+//	if (a <= 0 || a > 5) {
+//		printf("无效商品编号");
+//	}
+//	switch (a) {
+//	case 1:
+//		printf("编号1：笔记本，单价：5元\n");
+//		break;
+//	case 2:
+//		printf("编号2：钢笔，单价：8元\n");
+//		break;
+//	case 3:
+//		printf("编号3：橡皮，单价：2元\n");
+//		break;
+//	case 4:
+//		printf("编号4：尺子，单价：3元\n");
+//		break;
+//	case 5:
+//		printf("编号5：文具盒，单价：15元\n");
+//		}
+//	}
+//	return 0;
 //}
 #include<stdio.h>
 int main() {
-	double a, b,c;
-	while (scanf("%lf%lf", &a, &b) == 2) {
-		if (a <= 0 || b <= 0) {
-			continue;
+	int a = 0;
+	int b = 0;
+	int c = 0;
+	while (scanf("%d", &a) != EOF) {
+		b = 0;
+		while (a > 0) {
+			c = a % 10;
+			b = b * 10 + c;
+			a = a / 10;
 		}
-		c = a / (b * b);
-		if (c < 18.5) {
-			printf("BMI=%.2f，体型：偏瘦\n",c);
-		}
-		else if (c >= 18.5 && c < 24) {
-			printf("BMI=%.2f，体型：正常\n",c);
-		}
-		else if (c >= 24 && c < 28) {
-			printf("BMI=%.2f，体型：超重\n",c);
-
-		}
-		else {
-			printf("BMI=%.2f，体型：肥胖\n",c);
-
-		}
+		printf("%d\n", b);
 	}
 	return 0;
 }
