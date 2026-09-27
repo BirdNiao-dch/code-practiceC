@@ -649,18 +649,61 @@
 //	return 0;
 //}
 
+//#include<stdio.h>
+//int main() {
+//	int x = 0;
+//	int y = 0;
+//	int z = 0;
+//	for (x = 0;x <= 20;x ++) {
+//		for (y = 0;y <= 33;y++) {
+//			z = 100 - y - x;
+//			if (z>=0 && z%3 == 0&&5 * x + 3 * y + z * 1 / 3 == 100) {
+//				printf("公鸡%d只,母鸡%d只,小鸡%d只\n", x, y, z);
+//			}
+//		}
+//	}
+//	return 0;
+//}
+
+//#include<stdio.h> //2298
+//int main() {
+//	int a = 0;
+//	int b = 0;
+//	int c = 0;
+//	while (scanf("%d-%d", &a, &b) != EOF) {
+//		int flag = 0;
+//		if ((a % 4 == 0 && a % 100 != 0) || a % 400 == 0){
+//				flag = 1;
+//			}
+//				if (b == 2) {
+//					c = flag ? 29 : 28;
+//				}
+//				else if (b == 1 || b == 3 || b == 5 || b == 7 || b == 8 || b == 10 || b == 12) {
+//					c = 31;
+//				}
+//				else {
+//					c = 30;
+//				}
+//				printf("今年是%d年，%d月有%d天\n", a, b, c);
+//
+//			}
+//	return 0;
+//}
+//
 #include<stdio.h>
+#include<math.h>
 int main() {
-	int x = 0;
-	int y = 0;
-	int z = 0;
-	for (x = 0;x <= 20;x ++) {
-		for (y = 0;y <= 33;y++) {
-			z = 100 - y - x;
-			if (z>=0 && z%3 == 0&&5 * x + 3 * y + z * 1 / 3 == 100) {
-				printf("公鸡%d只,母鸡%d只,小鸡%d只\n", x, y, z);
-			}
+	int a = 0;
+	int b = 0;
+	double c = 0;
+	int d = 0;
+	while (scanf("%d%d", &a, &b) != EOF) {
+		if (b == 0) {
+			continue;
 		}
+		c = (double)a / b;
+		d = (int)(fabs(c)*100)% 10;
+		printf("商是%.6f,第二位小数是%d\n", c,d);
 	}
 	return 0;
 }
