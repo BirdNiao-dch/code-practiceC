@@ -690,20 +690,45 @@
 //	return 0;
 //}
 //
+//#include<stdio.h>
+//#include<math.h>
+//int main() {
+//	int a = 0;
+//	int b = 0;
+//	double c = 0;
+//	int d = 0;
+//	while (scanf("%d%d", &a, &b) != EOF) {
+//		if (b == 0) {
+//			continue;
+//		}
+//		c = (double)a / b;
+//		d = (int)(fabs(c)*100)% 10;
+//		printf("商是%.6f,第二位小数是%d\n", c,d);
+//	}
+//	return 0;
+//}
 #include<stdio.h>
-#include<math.h>
 int main() {
-	int a = 0;
-	int b = 0;
-	double c = 0;
-	int d = 0;
-	while (scanf("%d%d", &a, &b) != EOF) {
-		if (b == 0) {
+	double a, b,c;
+	while (scanf("%lf%lf", &a, &b) == 2) {
+		if (a <= 0 || b <= 0) {
 			continue;
 		}
-		c = (double)a / b;
-		d = (int)(fabs(c)*100)% 10;
-		printf("商是%.6f,第二位小数是%d\n", c,d);
+		c = a / (b * b);
+		if (c < 18.5) {
+			printf("BMI=%.2f，体型：偏瘦\n",c);
+		}
+		else if (c >= 18.5 && c < 24) {
+			printf("BMI=%.2f，体型：正常\n",c);
+		}
+		else if (c >= 24 && c < 28) {
+			printf("BMI=%.2f，体型：超重\n",c);
+
+		}
+		else {
+			printf("BMI=%.2f，体型：肥胖\n",c);
+
+		}
 	}
 	return 0;
 }
