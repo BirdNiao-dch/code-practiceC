@@ -35,21 +35,48 @@
 //	}
 //	return 0;
 //}
+//#include<stdio.h>
+//#include<string.h>
+//int main() {
+//	char arr1[] = "welcome to bit !!!!!!";
+//	char arr2[] = "#####################";
+//	size_t left = 0;
+//	size_t right = strlen(arr1) - 1;
+//
+//	while (left <= right) {
+//		arr2[left] = arr1[left];
+//		arr2[right] = arr1[right];
+//		printf("%s\n", arr2);
+//		left ++;
+//		right --;
+//
+//	}
+//	return 0;
+//}
+
 #include<stdio.h>
-#include<string.h>
 int main() {
-	char arr1[] = "welcome to bit !!!!!!";
-	char arr2[] = "#####################";
-	size_t left = 0;
-	size_t right = strlen(arr1) - 1;
+	int k = 7;
+	int arr[] = { 1,2,3,4,5,6,7,8,9 };
+	int sz = sizeof(arr) / sizeof(arr[0]);
 
+	int left = 0;
+	int right = sz - 1;
 	while (left <= right) {
-		arr2[left] = arr1[left];
-		arr2[right] = arr1[right];
-		printf("%s\n", arr2);
-		left ++;
-		right --;
-
+		int mid = (left + right) / 2;
+		if (arr[mid] < k) {
+			left = mid + 1;
+		}
+		else if (arr[mid] > k) {
+			right = mid - 1;
+		}
+		else {
+			printf("找到了，下标是 % d\n", mid);
+			break;
+		}
+	}
+	if (left > right) {
+		printf("找不到\n");
 	}
 	return 0;
 }
