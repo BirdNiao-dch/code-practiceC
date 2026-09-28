@@ -22,16 +22,34 @@
 //	}
 //	return 0;
 //}
+//#include<stdio.h>  变长数组示例
+//int main() {
+//	int n = 0;
+//	scanf("%d", &n);
+//	int arr[n];
+//	int i = 0;
+//	for (i = 0; i < n; i++) {
+//		scanf("%d", &arr[i]);
+//	}for (i = 0; i < n; i++) {
+//		printf("%d ",arr[i]);
+//	}
+//	return 0;
+//}
 #include<stdio.h>
+#include<string.h>
 int main() {
-	int n = 0;
-	scanf("%d", &n);
-	int arr[n];
-	int i = 0;
-	for (i = 0; i < n; i++) {
-		scanf("%d", &arr[i]);
-	}for (i = 0; i < n; i++) {
-		printf("%d ",arr[i]);
+	char arr1[] = "welcome to bit !!!!!!";
+	char arr2[] = "#####################";
+	size_t left = 0;
+	size_t right = strlen(arr1) - 1;
+
+	while (left <= right) {
+		arr2[left] = arr1[left];
+		arr2[right] = arr1[right];
+		printf("%s\n", arr2);
+		left ++;
+		right --;
+
 	}
 	return 0;
 }
