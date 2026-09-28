@@ -853,16 +853,56 @@
 //	}
 //	return 0;
 //}
+//#include<stdio.h>
+//int main() {
+//	int n;
+//	while (scanf("%d", &n) != EOF) {
+//		int sum = 0;
+//		while(n>0) {
+//			sum += n%10;
+//			n /= 10;
+//		}
+//		printf("%d\n", sum);
+//	}
+//	return 0;
+//}
+//#include<stdio.h>
+//int main() {
+//	int a = 0;
+//	int b = 0;
+//	int c = 0;
+//	
+//	while (scanf("%d%d", &a, &b) != EOF) {
+//		int i = a;
+//		int j = b;
+//		while (b != 0) {
+//			c = a % b;
+//			a = b;
+//			b = c;
+//		}
+//		printf("%d\n", (i * j) / a);
+//	}
+//	return 0;
+//}
 #include<stdio.h>
 int main() {
 	int n;
 	while (scanf("%d", &n) != EOF) {
-		int sum = 0;
-		while(n>0) {
-			sum += n%10;
-			n /= 10;
+		int a = 1;
+		int b = 1;
+		if (n == 1 || n == 2){
+			printf("1\n");
 		}
-		printf("%d\n", sum);
+		else {
+			int c;
+			int i;
+			for (i = 3;i <= n;i++) {
+				c = a + b;
+				a = b;
+				b = c;
+			}
+			printf("%d\n", c);
+		}
 	}
 	return 0;
 }
