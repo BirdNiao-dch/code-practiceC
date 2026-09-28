@@ -88,12 +88,28 @@
 //	printf("%d\n", (left + right) / 2);
 //	return 0;
 //}
+//#include<stdio.h>
+//int main() {
+//    int left = 0;
+//    int right = 0;
+//    // printf("%d\n", (left + right) / 2);
+//
+//    printf("%d\n", (right - left) / 2 + left);  //不管left和right谁大谁小都成立
+//    return 0;
+//}
+//函数的举例
 #include<stdio.h>
-int main() {
-    int left = 0;
-    int right = 0;
-    // printf("%d\n", (left + right) / 2);
-
-    printf("%d\n", (right - left) / 2 + left);  //不管left和right谁大谁小都成立
-    return 0;
-}
+//函数的定义
+//int Add(int x , int y) {
+//	int z = x + y;
+//	return z;
+//}
+//int main() {
+//	int a = 0;
+//	int b = 0;
+//	scanf("%d %d", &a, &b);
+//	//计算
+//	int c = Add(a, b);  //函数的调用
+//	printf("%d\n", c);
+//	return 0;
+//}
