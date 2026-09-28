@@ -759,19 +759,110 @@
 //	}
 //	return 0;
 //}
+//#include<stdio.h>
+//int main() {
+//	int a = 0;
+//	int b = 0;
+//	int c = 0;
+//	while (scanf("%d", &a) != EOF) {
+//		b = 0;
+//		while (a > 0) {
+//			c = a % 10;
+//			b = b * 10 + c;
+//			a = a / 10;
+//		}
+//		printf("%d\n", b);
+//	}
+//	return 0;
+//}
+//#include<stdio.h>
+//int main() {
+//	int i = 1;
+//	int n = 0;
+//	while (scanf("%d", &n) != EOF) {
+//		double pi = 0;
+//		for (i = 1;i <= n;i++) {
+//			pi += 6.0* (1.0 / (i * i));
+//		}
+//		printf("%.12f\n", pi);
+//	}
+//	return 0;
+//}
+//#include<stdio.h>
+//#include<math.h>
+//int main() {
+//	int n,i;
+//	while (scanf("%d", &n) != EOF) {
+//		int sum = 0;
+//		int term = 1;
+//		for (i = 1;i <= n;i++) {
+//			term = term * 7;
+//			sum += term;
+//		}
+//		printf("7+7*7+7*7*7+...=%d\n", sum);
+//	}
+//	return 0;
+//}
+//#include<stdio.h>
+//int main() {
+//	int n,i;
+//	while (scanf("%d", &n) != EOF) {
+//		int m = 1;
+//		for (i = 1;i <=n;i++) {
+//			m = (m + 1) * 2;
+//		}
+//		printf("%d\n",m);
+//	}
+//	return 0;
+//}
+//#include <stdio.h>
+//int main() {
+//    int n, i, sum, first;
+//    for (n = 2; n <= 1000; n++) {
+//        sum = 0;
+//        for (i = 1; i <= n / 2; i++){
+//            if (n % i == 0) {
+//                sum += i;
+//            }
+//    }
+//        if (sum == n) {
+//            printf("%d its factor are ", n);
+//            first = 1;
+//            for (i = 1; i <= n / 2; i++) {
+//                if (n % i == 0) {
+//                    if (!first) printf(",");
+//                    printf("%d", i);
+//                    first = 0;
+//                    }
+//                }
+//            printf("\n");
+//            }
+//        }
+//        return 0;
+//    }
+//#include<stdio.h>
+//int main() {
+//	int i,n;
+//	while (scanf("%d", &n) != EOF) {
+//		int x = 1;
+//		for (i = 1;i < n; i++) {
+//			x += 1;
+//			x *= 2;
+//		}
+//		printf("%d\n", x);
+//	}
+//	return 0;
+//}
 #include<stdio.h>
 int main() {
-	int a = 0;
-	int b = 0;
-	int c = 0;
-	while (scanf("%d", &a) != EOF) {
-		b = 0;
-		while (a > 0) {
-			c = a % 10;
-			b = b * 10 + c;
-			a = a / 10;
+	int n;
+	while (scanf("%d", &n) != EOF) {
+		int sum = 0;
+		while(n>0) {
+			sum += n%10;
+			n /= 10;
 		}
-		printf("%d\n", b);
+		printf("%d\n", sum);
 	}
 	return 0;
 }
