@@ -54,29 +54,46 @@
 //	return 0;
 //}
 
+//#include<stdio.h>
+//int main() {
+//	int k = 7;
+//	int arr[] = { 1,2,3,4,5,6,7,8,9 };
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//
+//	int left = 0;
+//	int right = sz - 1;
+//	while (left <= right) {
+//		int mid = (left + right) / 2;
+//		if (arr[mid] < k) {
+//			left = mid + 1;
+//		}
+//		else if (arr[mid] > k) {
+//			right = mid - 1;
+//		}
+//		else {
+//			printf("找到了，下标是 % d\n", mid);
+//			break;
+//		}
+//	}
+//	if (left > right) {
+//		printf("找不到\n");
+//	}
+//	return 0;
+//}
+//求平均值的方式
+//#include<stdio.h>
+//int main() {
+//	int left = 0;
+//	int right = 0;
+//	printf("%d\n", (left + right) / 2);
+//	return 0;
+//}
 #include<stdio.h>
 int main() {
-	int k = 7;
-	int arr[] = { 1,2,3,4,5,6,7,8,9 };
-	int sz = sizeof(arr) / sizeof(arr[0]);
+    int left = 0;
+    int right = 0;
+    // printf("%d\n", (left + right) / 2);
 
-	int left = 0;
-	int right = sz - 1;
-	while (left <= right) {
-		int mid = (left + right) / 2;
-		if (arr[mid] < k) {
-			left = mid + 1;
-		}
-		else if (arr[mid] > k) {
-			right = mid - 1;
-		}
-		else {
-			printf("找到了，下标是 % d\n", mid);
-			break;
-		}
-	}
-	if (left > right) {
-		printf("找不到\n");
-	}
-	return 0;
+    printf("%d\n", (right - left) / 2 + left);  //不管left和right谁大谁小都成立
+    return 0;
 }
