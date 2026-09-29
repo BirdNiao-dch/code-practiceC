@@ -932,27 +932,60 @@
 //	}
 //	return 0;
 //}
+//#include<stdio.h>
+//int main() {
+//	int i, j ;
+//	int flag;
+//	int count = 0;
+//	for (i = 2;i <= 1000;i++) {
+//		flag = 1;
+//		for (j = 2;j * j <= i;j++) {
+//			if (i % j == 0) {
+//				flag = 0;
+//				break;
+//			}
+//		}
+//		if (flag == 1) {
+//			printf("%d", i);
+//			count++;
+//			if (count % 10 == 0) {
+//				printf("\n");
+//			}
+//			else {
+//				printf(" ");
+//			}
+//		}
+//	}
+//	return 0;
+//}
 #include<stdio.h>
 int main() {
-	int i, j ;
+	int i, j;
 	int flag;
-	int count = 0;
-	for (i = 2;i <= 1000;i++) {
-		flag = 1;
-		for (j = 2;j * j <= i;j++) {
-			if (i % j == 0) {
-				flag = 0;
-				break;
+	int m, n;
+	int rev, t;
+	while (scanf("%d%d", &m, &n) != EOF) {
+		for (i = m;i <= n;i++) {
+			if (i < 2)
+				continue;
+			flag = 1;
+			for (j = 2; j * j <= i;j++) {
+				if (i % j == 0) {
+					flag = 0;
+					break;
+				}
 			}
-		}
-		if (flag == 1) {
-			printf("%d", i);
-			count++;
-			if (count % 10 == 0) {
-				printf("\n");
+			if (!flag) {
+				continue;
 			}
-			else {
-				printf(" ");
+			rev = 0;
+			t = i;
+			while (t > 0) {
+				rev = rev*10 + t % 10;
+				t /= 10;
+			}
+			if (rev == i) {
+				printf("%d\n", i);
 			}
 		}
 	}
