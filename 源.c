@@ -958,36 +958,93 @@
 //	}
 //	return 0;
 //}
+//#include<stdio.h>
+//int main() {
+//	int i, j;
+//	int flag;
+//	int m, n;
+//	int rev, t;
+//	while (scanf("%d%d", &m, &n) != EOF) {
+//		for (i = m;i <= n;i++) {
+//			if (i < 2)
+//				continue;
+//			flag = 1;
+//			for (j = 2; j * j <= i;j++) {
+//				if (i % j == 0) {
+//					flag = 0;
+//					break;
+//				}
+//			}
+//			if (!flag) {
+//				continue;
+//			}
+//			rev = 0;
+//			t = i;
+//			while (t > 0) {
+//				rev = rev*10 + t % 10;
+//				t /= 10;
+//			}
+//			if (rev == i) {
+//				printf("%d\n", i);
+//			}
+//		}
+//	}
+//	return 0;
+//}
+//#include<stdio.h>
+//int main() {
+//	int n;
+//	while (scanf("%d", &n) != EOF) {
+//		long long Sn = 0;
+//		long long a = 0;
+//		int i = 0;
+//		for (i = 0;i < n;i ++){
+//			a = a * 10 + 2;
+//			Sn = Sn + a;
+//		}
+//		printf("%lld\n", Sn);
+//	}
+//	return 0;
+//}
+#include<math.h>
 #include<stdio.h>
-int main() {
-	int i, j;
-	int flag;
-	int m, n;
-	int rev, t;
-	while (scanf("%d%d", &m, &n) != EOF) {
-		for (i = m;i <= n;i++) {
-			if (i < 2)
-				continue;
-			flag = 1;
-			for (j = 2; j * j <= i;j++) {
-				if (i % j == 0) {
-					flag = 0;
-					break;
-				}
-			}
-			if (!flag) {
-				continue;
-			}
-			rev = 0;
-			t = i;
-			while (t > 0) {
-				rev = rev*10 + t % 10;
-				t /= 10;
-			}
-			if (rev == i) {
-				printf("%d\n", i);
-			}
-		}
-	}
-	return 0;
+int main(void) {
+    double a, b, c;
+    double x, d, sq, x1, x2, t;
+    while (scanf("%lf %lf %lf", &a, &b, &c) == 3) {
+        if (a == 0.0 && b == 0.0 && c == 0.0)
+            break;                        
+
+        if (a == 0.0) {
+            if (b == 0.0) {               
+                printf("Unanswered\n");
+            }
+            else {
+                x = -c / b;
+                printf("x1=%.2f x2=%.2f\n", x, x);
+            }
+            continue;
+        }
+
+        d = b * b - 4 * a * c;     
+        if (d < 0) {
+            printf("Unanswered\n");
+        }
+        else if (fabs(d) < 1e-9) {     
+            x = -b / (2 * a);
+            printf("x1=%.2f x2=%.2f\n", x, x);
+        }
+        else {
+            sq = sqrt(d);
+            x1 = (-b - sq) / (2 * a);
+            x2 = (-b + sq) / (2 * a);
+            if (x1 > x2) {
+                t = x1;
+                x1 = x2;
+                x2 = t;
+            }
+            printf("x1=%.2f x2=%.2f\n", x1, x2);
+        }
+    }
+    return 0;
 }
