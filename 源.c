@@ -884,25 +884,51 @@
 //	}
 //	return 0;
 //}
+//#include<stdio.h>
+//int main() {
+//	int n;
+//	while (scanf("%d", &n) != EOF) {
+//		int a = 1;
+//		int b = 1;
+//		if (n == 1 || n == 2){
+//			printf("1\n");
+//		}
+//		else {
+//			int c;
+//			int i;
+//			for (i = 3;i <= n;i++) {
+//				c = a + b;
+//				a = b;
+//				b = c;
+//			}
+//			printf("%d\n", c);
+//		}
+//	}
+//	return 0;
+//}
 #include<stdio.h>
 int main() {
-	int n;
-	while (scanf("%d", &n) != EOF) {
-		int a = 1;
-		int b = 1;
-		if (n == 1 || n == 2){
-			printf("1\n");
+	int n = 7;
+	int i,j,k;
+	for (i = 1;i <= n;i+=2) {
+		int m = (n - i) / 2;
+		for (j = 0;j < m;j++) {
+			printf(" ");
 		}
-		else {
-			int c;
-			int i;
-			for (i = 3;i <= n;i++) {
-				c = a + b;
-				a = b;
-				b = c;
+			for (k = 0;k < i;k++) {
+				printf("*");
 			}
-			printf("%d\n", c);
+			printf("\n");
+	}
+	for (i = n - 2;i >= 1;i -= 2) {
+		int m = (n - i) / 2;
+		for (j = 0;j < m;j++) {
+			printf(" ");
 		}
+			for (k = 0;k < i;k++) {
+				printf("*");
+			}
+			printf("\n");
 	}
 	return 0;
 }
