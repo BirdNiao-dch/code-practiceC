@@ -906,29 +906,55 @@
 //	}
 //	return 0;
 //}
+//#include<stdio.h>
+//int main() {
+//	int n = 7;
+//	int i,j,k;
+//	for (i = 1;i <= n;i+=2) {
+//		int m = (n - i) / 2;
+//		for (j = 0;j < m;j++) {
+//			printf(" ");
+//		}
+//			for (k = 0;k < i;k++) {
+//				printf("*");
+//			}
+//			printf("\n");
+//	}
+//	for (i = n - 2;i >= 1;i -= 2) {
+//		int m = (n - i) / 2;
+//		for (j = 0;j < m;j++) {
+//			printf(" ");
+//		}
+//			for (k = 0;k < i;k++) {
+//				printf("*");
+//			}
+//			printf("\n");
+//	}
+//	return 0;
+//}
 #include<stdio.h>
 int main() {
-	int n = 7;
-	int i,j,k;
-	for (i = 1;i <= n;i+=2) {
-		int m = (n - i) / 2;
-		for (j = 0;j < m;j++) {
-			printf(" ");
-		}
-			for (k = 0;k < i;k++) {
-				printf("*");
+	int i, j ;
+	int flag;
+	int count = 0;
+	for (i = 2;i <= 1000;i++) {
+		flag = 1;
+		for (j = 2;j * j <= i;j++) {
+			if (i % j == 0) {
+				flag = 0;
+				break;
 			}
-			printf("\n");
-	}
-	for (i = n - 2;i >= 1;i -= 2) {
-		int m = (n - i) / 2;
-		for (j = 0;j < m;j++) {
-			printf(" ");
 		}
-			for (k = 0;k < i;k++) {
-				printf("*");
+		if (flag == 1) {
+			printf("%d", i);
+			count++;
+			if (count % 10 == 0) {
+				printf("\n");
 			}
-			printf("\n");
+			else {
+				printf(" ");
+			}
+		}
 	}
 	return 0;
 }
