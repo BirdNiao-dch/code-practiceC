@@ -80,7 +80,7 @@
 //	}
 //	return 0;
 //}
-//求平均值的方式
+////////////////////////////////////////求平均值的方式
 //#include<stdio.h>
 //int main() {
 //	int left = 0;
@@ -97,7 +97,7 @@
 //    printf("%d\n", (right - left) / 2 + left);  //不管left和right谁大谁小都成立
 //    return 0;
 //}
-//函数的举例
+//////////////////////////////////////////函数的举例
 #include<stdio.h>
 //函数的定义
 //int Add(int x , int y) {
@@ -111,5 +111,22 @@
 //	//计算
 //	int c = Add(a, b);  //函数的调用
 //	printf("%d\n", c);
+//	return 0;
+//}
+//////////////////////////////////////////return 语句
+//#include<stdio.h>
+//int is_leap_year(int y) {
+//	if (((y % 4 == 0) && (y % 100 != 0)) || (y % 400 == 0))
+//		return 1;
+//	else
+//		return 0;
+//}
+//int main() {
+//	int year = 0;
+//	scanf("%d", &year);
+//	if (is_leap_year(year) == 1)
+//		printf("闰年\n");
+//	else
+//		printf("不是闰年\n");
 //	return 0;
 //}
