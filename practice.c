@@ -165,12 +165,45 @@
 //	printhello();
 //	return 0;
 //}
-#include<stdio.h>
-int getnumber() {
-	return 123;
-}
-int main() {
-	int num = getnumber();
-	printf("%d\n", num);
-	return 0;
-}
+//#include<stdio.h>
+//int getnumber() {
+//	return 123;
+//}
+//int main() {
+//	int num = getnumber();
+//	printf("%d\n", num);
+//	return 0;
+//}
+//#include<stdio.h>
+//int max(int a, int b) {
+//    return a > b ? a : b;
+//}
+//int main() {
+//    int a, b;
+//    scanf("%d%d", &a, &b);
+//    int n = max(a,b);
+//    printf("%d\n", n);
+//    return 0;
+//}
+// /////////////////////////////////////数组做函数的参数
+//#include<stdio.h> 
+//void set_arr(int arr2[], int sz2) {
+//	int i = 0;
+//	for (i = 0;i < sz2;i++) {
+//		arr2[i] = -1;
+//	}
+//}
+//void print_arr(int arr2[], int sz2) {
+//	int i = 0;
+//	for (i = 0;i < sz2;i++) {
+//		printf("%d\n", arr2[i]);
+//	}
+//	printf("\n");
+//}
+//int main() {
+//	int arr[10] = { 0 };
+//	int sz = sizeof(arr) / sizeof(arr[10]);
+//	set_arr(arr,sz);
+//	print_arr(arr, sz);
+//	return 0;
+//}
