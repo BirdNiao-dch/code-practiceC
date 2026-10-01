@@ -130,3 +130,47 @@
 //		printf("不是闰年\n");
 //	return 0;
 //}
+//#include<stdio.h>
+//void test() {
+//	int n = 0;
+//	scanf("%d", &n);
+//	if (n == -1)
+//		return;
+//	printf("%d\n", n);
+//}
+//int main() {
+//	test();
+//	return 0;
+//}
+//#include<stdio.h>
+//void niao() {
+//	printf("Hello,C!\n");
+//}
+//#include<stdio.h>
+//void printmax(int a, int b) {
+//	int max = a > b ? a : b;
+//	printf("max = %d\n", max);
+//}
+//int main() {
+//	int a, b;
+//	scanf("%d%d", &a,&b);
+//	printmax(a,b);
+//	return 0;
+//}
+//#include<stdio.h>
+//void printhello() {
+//	printf("hello\n");
+//}
+//int main() {
+//	printhello();
+//	return 0;
+//}
+#include<stdio.h>
+int getnumber() {
+	return 123;
+}
+int main() {
+	int num = getnumber();
+	printf("%d\n", num);
+	return 0;
+}
