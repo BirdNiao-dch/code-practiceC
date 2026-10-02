@@ -56,14 +56,57 @@
 //    printf("%d\n", sz);
 //    return 0;
 //}
-#include<stdio.h>
-int getMaxFromInput(int a,int b) {
-    return a > b ? a : b;
-}
-int main() {
-    int a, b;
-    scanf("%d%d", &a, &b);
-    int max = getMaxFromInput(a,b);
-    printf("%d\n", max);
-    return 0;
-}
+//#include<stdio.h>
+//int getMaxFromInput(int a,int b) {
+//    return a > b ? a : b;
+//}
+//int main() {
+//    int a, b;
+//    scanf("%d%d", &a, &b);
+//    int max = getMaxFromInput(a,b);
+//    printf("%d\n", max);
+//    return 0;
+//}
+//#include<stdio.h>
+//void sumAndPrint(int a[], int n) {
+//    int i = 0;
+//    int sum = 0;
+//    for (i = 0;i < n;i++) {
+//        sum += a[i];
+//    }
+//    printf("sum = %d\n", sum);
+//}
+//int main() {
+//    int arr[] = { 1,2,3,4 };
+//    int n = sizeof(arr) / sizeof(arr[0]);
+//    int i = 0;
+//    sumAndPrint(arr, n);
+//    return 0;
+//}
+//#include<stdio.h>
+//void reverse(int a[], int n) {
+//    if (a == NULL || n <= 1)
+//        return;
+//    for (int i = 0, j = n - 1;i < j; ++i, --j) { //i从前向后，j从后向前，同时移动，直到相遇
+//        int t = a[i]; //临时变量t保存左边当前元素，避免覆盖
+//        a[i] = a[j];  //右边的元素赋值给左边位置
+//        a[j] = t;     //临时变量中的原左边元素放到右边位置，完成交换
+//    }
+//}
+//int main() {
+//    int a[] = { 1,2,3,4,5 };
+//    int n = sizeof(a) / sizeof(a[0]);
+//    printf("before: ");
+//    for (int i = 0;i < n;++i) {  //遍历数组并打印每个元素
+//        printf("%d", a[i]);
+//        putchar(' ');           //打印换行
+//    }
+//    putchar('\n');
+//    reverse(a, n);           //调用函数
+//    printf("after: ");
+//    for (int i = 0;i < n; ++i) {  //打印反转后的每个元素
+//        printf("%d", a[i]);
+//        putchar(' ');
+//    }
+//    return 0;
+//}
