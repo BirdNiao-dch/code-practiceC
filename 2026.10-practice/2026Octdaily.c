@@ -56,3 +56,14 @@
 //    printf("%d\n", sz);
 //    return 0;
 //}
+#include<stdio.h>
+int getMaxFromInput(int a,int b) {
+    return a > b ? a : b;
+}
+int main() {
+    int a, b;
+    scanf("%d%d", &a, &b);
+    int max = getMaxFromInput(a,b);
+    printf("%d\n", max);
+    return 0;
+}
