@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #define _CRT_SECURE_NO_WARNINGS
 //#include<stdio.h> 1002
 //int main()
@@ -1047,4 +1048,1055 @@ int main(void) {
         }
     }
     return 0;
+=======
+#define _CRT_SECURE_NO_WARNINGS
+//#include<stdio.h> 1002
+//int main()
+//{
+//	int n = 0;
+//	int i = 0;
+//	int sum = 0;
+//
+//	scanf("%d", &n);
+//	sum = n * (n + 1) / 2;
+//
+//	printf("%d\n", sum);
+//	return 0;
+//
+//}
+//#include<stdio.h> 1004
+//int main(void)
+//{
+//	int a = 0;
+//	int b = 0;
+//	scanf("%d %d", &a, &b);
+//	if (a > b)
+//		printf("The max number is %d.",a);
+//	else
+//		printf("The max number is %d.",b);
+//	return 0;
+//}
+
+
+//#include<stdio.h>   1541
+//int main()
+//{
+//	int a;
+//	while (scanf("%d", &a) != EOF)
+//	printf("Hello%d\n", a);
+//	return 0;
+//
+//}
+//#include<stdio.h>
+//int main()
+//{
+//	int a = 0;
+//	int b = 0;
+//		while (scanf("%d%d", &a,&b)!=EOF) {
+//			printf("%d\n", a + b);
+//	}
+//		return 0;
+//}
+
+//#include<stdio.h>
+//int main()
+//{
+//	double a = 0.0;
+//	double b = 0.0;
+//	double avg = 0.0;
+//	scanf("%lf %lf", &a, &b);
+//	avg = (a + b) / 2.0;
+//	printf("Average = %.2f",avg);
+//	return 0;
+//}
+
+//#include<stdio.h>
+//int main()
+//{
+//	int a;
+//	int sum = 0;
+//	while (scanf("%d", &a) != EOF) {
+//		sum += a;
+//	}
+//		printf("%d\n",sum);
+//		return 0;
+//}
+
+//#include<stdio.h>
+//int main()
+//{
+//	double R;
+//	double s;
+//	scanf("%lf",&R);
+//	s = 3.14159 * R * R;
+//	printf("%.3f", s);
+//	return 0;
+//}
+
+//#include<stdio.h>
+//int main()
+//{
+//	int L1, L2, L3;
+//	int V = 0;
+//	for(int i = 0 ; i<2 ; i++){
+//		scanf("%d%d%d",&L1,&L2,&L3);
+//		V = L1 * L2 * L3;
+//		printf("%d\n", V);
+//	}
+//	return 0;
+//}
+
+//Description   1008
+//对于每个输入的正整数，判断是否能被3整除，能输出“Yes”，不能就输出”No“。
+//Input
+//有若干行，每行一个待判断的正整数。
+//Output
+//对于每一行对应输出一个结果“Yes”或“No”。
+//#include<stdio.h>
+//int main()
+//{
+//	int a = 0;
+//	while (scanf("%d",&a) != EOF) {
+//		if (a % 3 == 0)
+//			printf("Yes\n");
+//		else
+//			printf("No\n");
+//	}
+//		
+//	return 0;
+//}
+
+//1009  Description
+//任意输入一个正整数，请你编程指出它的个位数。
+//Input
+//有若干行，每行一个正整数。
+//Output
+//每行对应输出个位数。
+//#include<stdio.h>
+//int main()
+//{
+//	int a = 0;
+//	while (scanf("%d", &a) != EOF) {
+//		printf("%d\n", a % 10);
+//	}
+//	return 0;
+//}
+
+//escription
+//素数是指只能被1和本身整除的数。输入若干个正整数，请你分别判断他们是否为素数。
+//注意：1不是素数。
+//Input
+//有若干行，每行一个正整数。
+//Output
+//对于每一行对应输出一个结果“Yes”或“No”。
+//Sample Input
+//#include<stdio.h>
+//int main()
+//{
+//	int a = 0;
+//	while (scanf("%d", &a) != EOF) {
+//		if (a % 1 == 1 && a % a == 1)
+//			printf("Yes\n");
+//		else
+//			printf("No\n");
+//
+//	}
+//	return 0;
+//}
+
+//#include<stdio.h>
+//int main() {
+//	double x = 0;
+//	double y = 0;
+//	while (scanf("%lf", &x) != EOF) {
+//		y = 1.0 + 1.0 / (1.0 + 1.0 / x);
+//		printf("%.2lf\n", y);
+//	}
+//		return 0;
+//}
+
+//#include <stdio.h>
+//#include <math.h>
+//int main() {
+//    double pi = 3.1415926;
+//    double y = (log(5.0 * log(3.0) )- log(2.0)) / sin(pi / 3.0);
+//    printf("%.3f\n", y);
+//    return 0;
+//}
+
+//#include<stdio.h>
+//int main() {
+//	printf("!@#$~%%^&*()_+|\\=-\"\":");
+//	return 0;
+//}
+
+//#include<stdio.h>
+//#include<math.h>
+//int main() {
+//	double PI = 3.1415926;
+//	int x = 0;
+//	whlie(scanf("%d", &x) != EOF) {
+//		double Sum = 0.0;
+//		double rad = x * PI / 180.0;
+//		Sum = sin(rad) + cos(rad) + tan(rad) + 1.0/tan(rad) + 1.0/sin(rad) + 1.0/cos(rad);
+//		printf("Sum=%.2f\n", Sum);
+//	}
+//	return 0;
+//}
+
+//#include <stdio.h>
+//#include <math.h>
+//
+//int main() {
+//    double PI = 3.1415926;
+//    int x = 0;
+//
+//    while (scanf("%d", &x) != EOF) {
+//        double Sum = 0.0;
+//        double rad = x * PI / 180.0;
+//
+//        Sum = sin(rad) + cos(rad) + tan(rad) + 1.0 / tan(rad) + 1.0 / sin(rad) + 1.0 / cos(rad);
+//
+//        printf("Sum=%.2f\n", Sum);
+//    }
+//
+//    return 0;
+//}
+
+//#include<stdio.h> 1027
+//int main() {
+//	char grade;
+//	while (scanf(" %c", &grade)!=EOF) {
+//		switch (grade)
+//		{
+//		case 'A':
+//			printf("90~100\n");
+//			break;
+//		case 'B':
+//			printf("80~89\n");
+//			break;
+//		case 'C':
+//			printf("70~79\n");
+//			break;
+//		case 'D':
+//			printf("60~69\n");
+//			break;
+//		case 'E':
+//			printf("0~59\n");
+//			break;
+//		default:
+//			printf("error\n");
+//			break;
+//		}
+//	}
+//	return 0;
+//}
+
+//#include<stdio.h> 1032
+//#include<math.h>
+//int main() {
+//	int n;
+//	scanf("%d", &n);
+//	while (n--) {
+//		double a = 0.0;
+//		double b = 0.0;
+//		double ans = 0.0;
+//		scanf("%lf %lf", &a, &b);
+//		ans = a * b;
+//		if (fabs(ans) < 0.0005) {
+//			ans = 0.0;
+//		}
+//		printf("%.3f\n", ans);
+//	}
+//	return 0;
+//}
+//#include<stdio.h> 1010
+//int main() {
+//	int a, b, c,t;
+//	while (scanf("%d%d%d", &a, &b, &c) != EOF) {
+//		if (a > b) { t = a;a = b;b = t; }
+//		if (a > c) { t = a;a = c;c = t; }
+//		if (b > c) { t = b;b = c;c = t; }
+//		printf("%d %d %d\n", a, b, c);
+//	}
+//
+//	return 0;
+//}
+
+//#include<stdio.h>  1015
+//int main() {
+//	int n, i;
+//	while (scanf("%d",&n) != EOF) {
+//		double sum = 0.0;
+//		for (i = 1; i <= n; i++) {
+//			sum = sum + 1.0 / i;
+//		}
+//		printf("%.2f\n", sum);	
+//	}
+//	return 0;
+//}
+//
+//#include<stdio.h>
+//#include<math.h>
+//int main() {
+//	int i, n;
+//	while (scanf("%d", &n) != EOF) {
+//		double sum = 0.0;
+//		for (i = 1; i <= n;i++) {
+//			sum = sum + 1.0 / i * pow((-1), (i + 1));
+//		}
+//		printf("%.2f\n",sum);
+//	}
+//	return 0;
+//}
+
+//1024
+//#include<stdio.h>
+//int main() {
+//	int a = 0;
+//	while (scanf("%d",&a) != EOF) {
+//		int count = 0;
+//		while (a > 0) {
+//			count++;
+//			a = a / 10;
+//		}
+//		printf("%d\n", count);
+//	}
+//	return 0;
+//}
+
+//1012 素数
+//#include<stdio.h>
+//int main() {
+//	int i,n,flag;
+//	while (scanf("%d", &n) != EOF) {
+//		if (n <= 1 && n  > 0) {
+//			printf("No\n");
+//			continue;
+//		}
+//		flag = 1;
+//		for (i = 2;i < n; i++) {
+//			if (n % i == 0) {
+//				flag = 0;
+//				break;
+//			}
+//		}
+//		if (flag == 1) {
+//			printf("Yes\n");
+//		}
+//		else {
+//			printf("No\n");
+//		}
+//	}
+//		
+//	return 0;
+//}
+
+//1066 直角三角形
+//#include<stdio.h>
+//int main() {
+//	int i = 0;
+//	int n = 0;
+//	int j = 0;
+//	while (scanf("%d", &n) != EOF&&n!=0) {
+//		for (i = 1;i <= n;i++) {
+//			for (j = 1;j <= i;j ++) {
+//				printf("*");
+//			}
+//			printf("\n");
+//		}
+//		printf("\n");
+//	}
+//	return 0;
+//}
+
+//1011三角形的面积
+//#include<stdio.h>
+//#include<math.h>
+//int main() {
+//	double a, b, c, p, s;
+//	while (scanf("%lf%lf%lf", &a,&b,&c) != EOF) {
+//		if (a == 0 && b == 0 && c == 0) {
+//			break;
+//		}
+//		p = (a + b + c)/2.0;
+//		s = sqrt(p * (p - a) * (p - b) * (p - c));
+//		if (a + b > c && a + c > b && b + c > a) {
+//			printf("%.2f\n", s);
+//		}
+//		else {
+//			printf("No\n");
+//		}
+//	}
+//	return 0;
+//}
+
+//1035
+//#include<stdio.h>
+//#include<stdlib.h>
+//int main() {
+//	int a, b, c, d,s;
+//		while (scanf("%d%d%d%d", &a,& b,& c,& d) != EOF){
+//			int e = abs(a - c);
+//			int f = abs(b - d);
+//			s = e * f;
+//			printf("%d\n", s);
+//			}
+//	return 0;
+//}
+
+//#include<stdio.h>
+//#include<math.h>
+//int main() {
+//	double a, b, c, d;
+//	double f, g;
+//	double e;
+//	while (scanf("%lf%lf%lf%lf",&a, &b, &c, &d) != EOF) {
+//		f = fabs(a - c);
+//		g = fabs(b - d);
+//		e = sqrt(f*f+g*g);
+//		printf("%.2f\n", e);
+//	}
+//	return 0;
+//}
+
+//#include<stdio.h>
+//#include<math.h>
+//#define PI 3.1415926535897932384626
+//int main() {
+//	double a, b, c,d,rad,A;
+//	while (scanf("%lf%lf%lf", &a, &b, &c) != EOF) {
+//		d = (b * b + c * c - a * a) / (2*b*c);
+//		rad = acos(d);
+//		A = rad * 180.0 / PI;
+//		printf("%.1f\n", A);
+//
+//	}
+//	return 0;
+//}
+//
+//#include<stdio.h>  1043
+//int main() {
+//	int n = 0;
+//	while (scanf("%d", &n) != EOF&&n!=0) {
+//		int a = 2;
+//		int b = 1;
+//		int c;
+//		double sum = 0.0;
+//		int i = 0;
+//		for (i = 0;i < n;i++) {
+//			sum = sum + (double)a / b;
+//			c = a;
+//			a += b;
+//			b = c;
+//		}
+//		printf("%.2f\n", sum);
+//
+//	}
+//
+//	return 0;
+//}
+
+//#include<stdio.h>   1046
+//int n = 0;
+//int main() {
+//	while (scanf("%d", &n) != EOF) {
+//		int b = 1;
+//		int c = 1;
+//		double sum = 0.0;
+//		int i = 0;
+//		for (i = 1;i <= n;i++) {
+//			sum = sum + c * 1.0/ b;
+//			b = b + 2;
+//			c = -c;
+//		}
+//		printf("π/4 ≈ %.8f\n", sum);
+//	}
+//	return 0;
+//}
+//
+//#include<stdio.h>
+//int main() {
+//	int n,i;
+//	int m;
+//	while (scanf("%d", &n) != EOF&&n>0) {
+//		int T = 1;
+//		for (i = 1;i <= n;i++) {
+//			T = T * i;
+//		}
+//
+//		printf("%d\n", T);
+//
+//	}
+//	return 0;
+//}
+//
+
+//#include <stdio.h> 1022
+//int main(void) {
+//    int n, first = 1;
+//    while (scanf("%d", &n) == 1) {
+//        if (n % 6 == 0 && n % 11 != 0) {
+//            if (!first) putchar(' ');
+//            printf("%d", n);
+//            first = 0;
+//        }
+//    }
+//    putchar('\n');
+//    return 0;
+//}
+
+//#include<stdio.h>  1196
+//int main(void) {
+//	double x = 0.0;
+//	double n = 0.0;
+//	while (scanf("%lf", &x) != EOF) {
+//		if (x <= 3) {
+//			n = 6.00;
+//			printf("%.2f\n", n);
+//		}
+//		else {
+//			n = 6.0 + (x - 3.0) * 1.4;
+//			printf("%.2f\n", n);
+//		}
+//	}
+//	return 0;
+//}
+
+//#include<stdio.h>
+//int main() {
+//	double n =0.0;
+//	while (scanf("%lf", &n) != EOF) {
+//		if (n >= 95) {
+//			printf("A+\n");
+//		}
+//		else if (n >= 90) {
+//			printf("A\n");
+//		}
+//		else if (n >= 85) {
+//			printf("A-\n");
+//		}
+//		else if (n >= 80) {
+//			printf("B+\n");
+//		}
+//		else if (n >= 75) {
+//			printf("B\n");
+//		}
+//		else if (n >= 70) {
+//			printf("B-\n");
+//		}
+//		else if (n >= 60) {
+//			printf("C\n");
+//		}
+//		else {
+//			printf("D\n");
+//		}
+//	}
+//	return 0;
+//}
+// 
+//#include<stdio.h> 1449
+//int main() {
+//    int year = 0;
+//    while (scanf("%d", &year) != EOF) {
+//        if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
+//            printf("%d是闰年。\n", year);
+//        }
+//        else {
+//            printf("%d不是闰年。\n", year);
+//        }
+//    }
+//    return 0;
+//}
+
+//#include <stdio.h>
+//int main() {
+//    int h, m;
+//    while (scanf("%d:%d", &h, &m) == 2) {
+//        if (h < 0 || h > 23 || m < 0 || m > 59) {
+//            printf("输入时间不合理.\n");
+//        }
+//        else if (h == 0) {
+//            printf("%d:%02dAM\n", 0, m);
+//        }
+//        else if (h < 12) {
+//            printf("%d:%02dAM\n", h, m);
+//        }
+//        else if (h == 12) {
+//
+//            printf("%d:%02dPM\n", 12, m);
+//        }
+//        else {
+//            printf("%d:%02dPM\n", h - 12, m);
+//        }
+//    }
+//    return 0;
+//}
+
+//#include<stdio.h>
+//int main() {
+//	int x = 0;
+//	int y = 0;
+//	while (scanf("%d", &x) != EOF) {
+//		if (x < 1) {
+//			y = x;
+//		}
+//		else if (x >= 1 && x < 10) {
+//			y = 2 * x - 1;
+//		}
+//		else {
+//			y = 10;
+//		}
+//		printf("y = %d\n", y);
+//	}
+//	return 0;
+//}
+
+//#include<stdio.h>
+//int main() {
+//	char n;
+//	char m;
+//	while (scanf(" %c",&n) != EOF) {
+//		m = n + 1;
+//		printf("result:%c\n", m);
+//	}
+//	return 0;
+//}
+
+//#include<stdio.h>
+//#include<math.h>
+//int main() {
+//	double x = 0.0;
+//	double y = 0.0;
+//	while (scanf("%lf", &x) != EOF) {
+//		if (x < 1) {
+//			y = fabs(x);
+//		}
+//		else if (x >= 1 && x <= 10) {
+//			y = x * x - 1.0;
+//		}
+//		else {
+//			y = 2 * x + 1;
+//		}
+//		printf("y=%.2f\n", y);
+//	}
+//	return 0;
+//}
+
+//#include<stdio.h>
+//#include<math.h>
+//int main() {
+//	double x;
+//	while (scanf("%lf", &x) != EOF) {
+//		int i = 1;
+//		double sum = 1.0;
+//		double term = 1.0;
+//			for (i = 1;fabs(term)>1e-16;i++) {
+//				term = term * ((-x) * x) / ((2 * i - 1) * (2 * i));
+//				sum += term;
+//			}
+//			printf("%.2f\n", sum);
+//	}
+//	return 0;
+//}
+
+//#include<stdio.h>
+//int main() {
+//	int x = 0;
+//	int y = 0;
+//	int z = 0;
+//	for (x = 0;x <= 20;x ++) {
+//		for (y = 0;y <= 33;y++) {
+//			z = 100 - y - x;
+//			if (z>=0 && z%3 == 0&&5 * x + 3 * y + z * 1 / 3 == 100) {
+//				printf("公鸡%d只,母鸡%d只,小鸡%d只\n", x, y, z);
+//			}
+//		}
+//	}
+//	return 0;
+//}
+
+//#include<stdio.h> //2298
+//int main() {
+//	int a = 0;
+//	int b = 0;
+//	int c = 0;
+//	while (scanf("%d-%d", &a, &b) != EOF) {
+//		int flag = 0;
+//		if ((a % 4 == 0 && a % 100 != 0) || a % 400 == 0){
+//				flag = 1;
+//			}
+//				if (b == 2) {
+//					c = flag ? 29 : 28;
+//				}
+//				else if (b == 1 || b == 3 || b == 5 || b == 7 || b == 8 || b == 10 || b == 12) {
+//					c = 31;
+//				}
+//				else {
+//					c = 30;
+//				}
+//				printf("今年是%d年，%d月有%d天\n", a, b, c);
+//
+//			}
+//	return 0;
+//}
+//
+//#include<stdio.h>
+//#include<math.h>2299
+//int main() {
+//	int a = 0;
+//	int b = 0;
+//	double c = 0;
+//	int d = 0;
+//	while (scanf("%d%d", &a, &b) != EOF) {
+//		if (b == 0) {
+//			continue;
+//		}
+//		c = (double)a / b;
+//		d = (int)(fabs(c)*100)% 10;
+//		printf("商是%.6f,第二位小数是%d\n", c,d);
+//	}
+//	return 0;
+////}
+//#include<stdio.h>3000
+//int main() {
+//	double a, b,c;
+//	while (scanf("%lf%lf", &a, &b) == 2) {
+//		if (a <= 0 || b <= 0) {
+//			continue;
+//		}
+//		c = a / (b * b);
+//		if (c < 18.5) {
+//			printf("BMI=%.2f，体型：偏瘦\n",c);
+//		}
+//		else if (c >= 18.5 && c < 24) {
+//			printf("BMI=%.2f，体型：正常\n",c);
+//		}
+//		else if (c >= 24 && c < 28) {
+//			printf("BMI=%.2f，体型：超重\n",c);
+//
+//		}
+//		else {
+//			printf("BMI=%.2f，体型：肥胖\n",c);
+//
+//		}
+//	}
+//	return 0;
+//}
+
+//#include<stdio.h>
+//int main() {
+//	int a = 0;
+//	while(scanf("%d",&a)!=EOF){
+//	if (a <= 0 || a > 5) {
+//		printf("无效商品编号");
+//	}
+//	switch (a) {
+//	case 1:
+//		printf("编号1：笔记本，单价：5元\n");
+//		break;
+//	case 2:
+//		printf("编号2：钢笔，单价：8元\n");
+//		break;
+//	case 3:
+//		printf("编号3：橡皮，单价：2元\n");
+//		break;
+//	case 4:
+//		printf("编号4：尺子，单价：3元\n");
+//		break;
+//	case 5:
+//		printf("编号5：文具盒，单价：15元\n");
+//		}
+//	}
+//	return 0;
+//}
+//#include<stdio.h>
+//int main() {
+//	int a = 0;
+//	int b = 0;
+//	int c = 0;
+//	while (scanf("%d", &a) != EOF) {
+//		b = 0;
+//		while (a > 0) {
+//			c = a % 10;
+//			b = b * 10 + c;
+//			a = a / 10;
+//		}
+//		printf("%d\n", b);
+//	}
+//	return 0;
+//}
+//#include<stdio.h>
+//int main() {
+//	int i = 1;
+//	int n = 0;
+//	while (scanf("%d", &n) != EOF) {
+//		double pi = 0;
+//		for (i = 1;i <= n;i++) {
+//			pi += 6.0* (1.0 / (i * i));
+//		}
+//		printf("%.12f\n", pi);
+//	}
+//	return 0;
+//}
+//#include<stdio.h>
+//#include<math.h>
+//int main() {
+//	int n,i;
+//	while (scanf("%d", &n) != EOF) {
+//		int sum = 0;
+//		int term = 1;
+//		for (i = 1;i <= n;i++) {
+//			term = term * 7;
+//			sum += term;
+//		}
+//		printf("7+7*7+7*7*7+...=%d\n", sum);
+//	}
+//	return 0;
+//}
+//#include<stdio.h>
+//int main() {
+//	int n,i;
+//	while (scanf("%d", &n) != EOF) {
+//		int m = 1;
+//		for (i = 1;i <=n;i++) {
+//			m = (m + 1) * 2;
+//		}
+//		printf("%d\n",m);
+//	}
+//	return 0;
+//}
+//#include <stdio.h>
+//int main() {
+//    int n, i, sum, first;
+//    for (n = 2; n <= 1000; n++) {
+//        sum = 0;
+//        for (i = 1; i <= n / 2; i++){
+//            if (n % i == 0) {
+//                sum += i;
+//            }
+//    }
+//        if (sum == n) {
+//            printf("%d its factor are ", n);
+//            first = 1;
+//            for (i = 1; i <= n / 2; i++) {
+//                if (n % i == 0) {
+//                    if (!first) printf(",");
+//                    printf("%d", i);
+//                    first = 0;
+//                    }
+//                }
+//            printf("\n");
+//            }
+//        }
+//        return 0;
+//    }
+//#include<stdio.h>
+//int main() {
+//	int i,n;
+//	while (scanf("%d", &n) != EOF) {
+//		int x = 1;
+//		for (i = 1;i < n; i++) {
+//			x += 1;
+//			x *= 2;
+//		}
+//		printf("%d\n", x);
+//	}
+//	return 0;
+//}
+//#include<stdio.h>
+//int main() {
+//	int n;
+//	while (scanf("%d", &n) != EOF) {
+//		int sum = 0;
+//		while(n>0) {
+//			sum += n%10;
+//			n /= 10;
+//		}
+//		printf("%d\n", sum);
+//	}
+//	return 0;
+//}
+//#include<stdio.h>
+//int main() {
+//	int a = 0;
+//	int b = 0;
+//	int c = 0;
+//	
+//	while (scanf("%d%d", &a, &b) != EOF) {
+//		int i = a;
+//		int j = b;
+//		while (b != 0) {
+//			c = a % b;
+//			a = b;
+//			b = c;
+//		}
+//		printf("%d\n", (i * j) / a);
+//	}
+//	return 0;
+//}
+//#include<stdio.h>
+//int main() {
+//	int n;
+//	while (scanf("%d", &n) != EOF) {
+//		int a = 1;
+//		int b = 1;
+//		if (n == 1 || n == 2){
+//			printf("1\n");
+//		}
+//		else {
+//			int c;
+//			int i;
+//			for (i = 3;i <= n;i++) {
+//				c = a + b;
+//				a = b;
+//				b = c;
+//			}
+//			printf("%d\n", c);
+//		}
+//	}
+//	return 0;
+//}
+//#include<stdio.h>
+//int main() {
+//	int n = 7;
+//	int i,j,k;
+//	for (i = 1;i <= n;i+=2) {
+//		int m = (n - i) / 2;
+//		for (j = 0;j < m;j++) {
+//			printf(" ");
+//		}
+//			for (k = 0;k < i;k++) {
+//				printf("*");
+//			}
+//			printf("\n");
+//	}
+//	for (i = n - 2;i >= 1;i -= 2) {
+//		int m = (n - i) / 2;
+//		for (j = 0;j < m;j++) {
+//			printf(" ");
+//		}
+//			for (k = 0;k < i;k++) {
+//				printf("*");
+//			}
+//			printf("\n");
+//	}
+//	return 0;
+//}
+//#include<stdio.h>
+//int main() {
+//	int i, j ;
+//	int flag;
+//	int count = 0;
+//	for (i = 2;i <= 1000;i++) {
+//		flag = 1;
+//		for (j = 2;j * j <= i;j++) {
+//			if (i % j == 0) {
+//				flag = 0;
+//				break;
+//			}
+//		}
+//		if (flag == 1) {
+//			printf("%d", i);
+//			count++;
+//			if (count % 10 == 0) {
+//				printf("\n");
+//			}
+//			else {
+//				printf(" ");
+//			}
+//		}
+//	}
+//	return 0;
+//}
+//#include<stdio.h>
+//int main() {
+//	int i, j;
+//	int flag;
+//	int m, n;
+//	int rev, t;
+//	while (scanf("%d%d", &m, &n) != EOF) {
+//		for (i = m;i <= n;i++) {
+//			if (i < 2)
+//				continue;
+//			flag = 1;
+//			for (j = 2; j * j <= i;j++) {
+//				if (i % j == 0) {
+//					flag = 0;
+//					break;
+//				}
+//			}
+//			if (!flag) {
+//				continue;
+//			}
+//			rev = 0;
+//			t = i;
+//			while (t > 0) {
+//				rev = rev*10 + t % 10;
+//				t /= 10;
+//			}
+//			if (rev == i) {
+//				printf("%d\n", i);
+//			}
+//		}
+//	}
+//	return 0;
+//}
+//#include<stdio.h>
+//int main() {
+//	int n;
+//	while (scanf("%d", &n) != EOF) {
+//		long long Sn = 0;
+//		long long a = 0;
+//		int i = 0;
+//		for (i = 0;i < n;i ++){
+//			a = a * 10 + 2;
+//			Sn = Sn + a;
+//		}
+//		printf("%lld\n", Sn);
+//	}
+//	return 0;
+//}
+#include<math.h>
+#include<stdio.h>
+int main(void) {
+    double a, b, c;
+    double x, d, sq, x1, x2, t;
+    while (scanf("%lf %lf %lf", &a, &b, &c) == 3) {
+        if (a == 0.0 && b == 0.0 && c == 0.0)
+            break;                        
+
+        if (a == 0.0) {
+            if (b == 0.0) {               
+                printf("Unanswered\n");
+            }
+            else {
+                x = -c / b;
+                printf("x1=%.2f x2=%.2f\n", x, x);
+            }
+            continue;
+        }
+
+        d = b * b - 4 * a * c;     
+        if (d < 0) {
+            printf("Unanswered\n");
+        }
+        else if (fabs(d) < 1e-9) {     
+            x = -b / (2 * a);
+            printf("x1=%.2f x2=%.2f\n", x, x);
+        }
+        else {
+            sq = sqrt(d);
+            x1 = (-b - sq) / (2 * a);
+            x2 = (-b + sq) / (2 * a);
+            if (x1 > x2) {
+                t = x1;
+                x1 = x2;
+                x2 = t;
+            }
+            printf("x1=%.2f x2=%.2f\n", x1, x2);
+        }
+    }
+    return 0;
+>>>>>>> 186de74a9623080e7d7fd036ef6f1c2306e1e3fb
 }
