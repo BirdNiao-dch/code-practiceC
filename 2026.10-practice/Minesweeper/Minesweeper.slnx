@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="Minesweeper/Minesweeper.vcxproj" />
+  <Project Path="Minesweeper/Minesweeper.vcxproj" Id="20b19d5b-e519-4652-92db-97e585e51766" />
 </Solution>
