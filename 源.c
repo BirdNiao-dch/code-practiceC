@@ -1102,41 +1102,60 @@
 //	}
 //	return 0;
 //}
+//#include<stdio.h>
+//#include<math.h>
+//double Avage(double a[], int n) {
+//	double avage = 0;
+//	int i;
+//	for (i = 0;i < n;i++) {
+//		avage += a[i];
+//	}
+//	avage /= n;
+//	return avage;
+//}
+//int main() {
+//	int T = 0;
+//	int i, n,t;
+//	double x_, s, sum, sum1;
+//	while (scanf("%d", &T) != EOF) {
+//		double a[50];
+//		x_ = 0;
+//		sum = 0;
+//		for (t = 0;t < T;t++) {
+//			scanf("%d", &n);
+//			
+//			for (i = 0;i < n;i++) {
+//				scanf("%lf", &a[i]);
+//			}
+//			x_ = Avage(a, n);
+//			s = 0;
+//			sum1 = 0;
+//			for (i = 0;i < n;i++) {
+//				sum1 += pow((a[i] - x_), 2);
+//				s = (1.0 / n) * sum1;
+//			}
+//			printf("s^2=%.2f\n", s);
+//		}
+//	}
+//	
+//	return 0;
+//}
 #include<stdio.h>
-#include<math.h>
-double Avage(double a[], int n) {
-	double avage = 0;
-	int i;
-	for (i = 0;i < n;i++) {
-		avage += a[i];
-	}
-	avage /= n;
-	return avage;
+int Fibonacci(int n) {
+	if (n == 1 || n == 2)
+		return 1;
+	else
+		return Fibonacci(n - 2) + Fibonacci(n - 1);
 }
 int main() {
-	int T = 0;
-	int i, n,t;
-	double x_, s, sum, sum1;
-	while (scanf("%d", &T) != EOF) {
-		double a[50];
-		x_ = 0;
-		sum = 0;
-		for (t = 0;t < T;t++) {
-			scanf("%d", &n);
-			
-			for (i = 0;i < n;i++) {
-				scanf("%lf", &a[i]);
-			}
-			x_ = Avage(a, n);
-			s = 0;
-			sum1 = 0;
-			for (i = 0;i < n;i++) {
-				sum1 += pow((a[i] - x_), 2);
-				s = (1.0 / n) * sum1;
-			}
-			printf("s^2=%.2f\n", s);
-		}
+	int m = 0;
+	int r;
+	int n;
+	while (scanf("%d", &m) != EOF) {
+		n = 1;
+		while (Fibonacci(n) < m)
+			n++;
+		printf("%d\n", n);
 	}
-	
 	return 0;
 }
