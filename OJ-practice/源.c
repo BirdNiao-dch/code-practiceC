@@ -1159,35 +1159,47 @@
 //	}
 //	return 0;
 //}
-#include<stdio.h>
-void print_arr(int arr[], int len) {
-	int i;
-	for (i = 0;i < len;i++) {
-		printf("%d ", arr[i]);
-	}
-	printf("\n");
-}
-void bubble_sort(int arr[], int len) {
-	int i, j;
-	for (i = 0;i < len - 1;i++) {
-		for (j = 0;j < len - 1 - i;j++) {
-			if (arr[j] > arr[j + 1]) {
-				int t = arr[j];
-				arr[j] = arr[j + 1];
-				arr[j + 1] = t;
-			}
-		}
-	}
-}
-int main(){
-	int arr[100];
-	int n , i;
-	while (scanf("%d", &n)==1&&n!=0) {
-		for (i = 0;i < n;i++) {
-			scanf("%d", &arr[i]);
-		}
-		bubble_sort(arr, n);
-		print_arr(arr, n);
-	}
-	return 0;
-}
+//#include<stdio.h>
+//void print_arr(int arr[], int len) {
+//	int i;
+//	for (i = 0;i < len;i++) {
+//		printf("%d ", arr[i]);
+//	}
+//	printf("\n");
+//}
+//void bubble_sort(int arr[], int len) {
+//	int i, j;
+//	for (i = 0;i < len - 1;i++) {
+//		for (j = 0;j < len - 1 - i;j++) {
+//			if (arr[j] > arr[j + 1]) {
+//				int t = arr[j];
+//				arr[j] = arr[j + 1];
+//				arr[j + 1] = t;
+//			}
+//		}
+//	}
+//}
+//int main(){
+//	int arr[100];
+//	int n , i;
+//	while (scanf("%d", &n)==1&&n!=0) {
+//		for (i = 0;i < n;i++) {
+//			scanf("%d", &arr[i]);
+//		}
+//		bubble_sort(arr, n);
+//		print_arr(arr, n);
+//	}
+//	return 0;
+//}
+//#include<stdio.h>
+//int main() {
+//	char c;
+//	while (scanf(" %c", &c) != EOF) {
+//		if (c >= 'a' && c <= 'z') {
+//			c = c - 'a' + 'A';
+//		}
+//		printf("%c\n",c);
+//
+//	}
+//	return 0;
+//}

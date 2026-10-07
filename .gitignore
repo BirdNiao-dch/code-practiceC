@@ -7,6 +7,16 @@ Release/
 *.obj
 *.out
 
+# 忽略 VS 的缓存和配置文件
+.vs/
+x64/
+Debug/
+Release/
+*.sln
+*.vcxproj
+*.filters
+*.user
+
 # 忽略 VSCode 配置
 .vscode/
 .idea/
