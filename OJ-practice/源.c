@@ -1006,45 +1006,188 @@
 //	}
 //	return 0;
 //}
-#include<math.h>
+//#include<math.h>
+//#include<stdio.h>
+//int main(void) {
+//    double a, b, c;
+//    double x, d, sq, x1, x2, t;
+//    while (scanf("%lf %lf %lf", &a, &b, &c) == 3) {
+//        if (a == 0.0 && b == 0.0 && c == 0.0)
+//            break;                        
+//
+//        if (a == 0.0) {
+//            if (b == 0.0) {               
+//                printf("Unanswered\n");
+//            }
+//            else {
+//                x = -c / b;
+//                printf("x1=%.2f x2=%.2f\n", x, x);
+//            }
+//            continue;
+//        }
+//
+//        d = b * b - 4 * a * c;     
+//        if (d < 0) {
+//            printf("Unanswered\n");
+//        }
+//        else if (fabs(d) < 1e-9) {     
+//            x = -b / (2 * a);
+//            printf("x1=%.2f x2=%.2f\n", x, x);
+//        }
+//        else {
+//            sq = sqrt(d);
+//            x1 = (-b - sq) / (2 * a);
+//            x2 = (-b + sq) / (2 * a);
+//            if (x1 > x2) {
+//                t = x1;
+//                x1 = x2;
+//                x2 = t;
+//            }
+//            printf("x1=%.2f x2=%.2f\n", x1, x2);
+//        }
+//    }
+//    return 0;
+//}
+//#include<stdio.h>
+//int main() {
+//	int n = 0;
+//	while (scanf("%d", &n) != EOF) {
+//		double arr[n];
+//		int i = 0;
+//		double sum = 0;
+//		for (i = 0;i < n;i++) {
+//			scanf("%lf", &arr[i]);
+//		}
+//		double max = arr[0];
+//		double min = arr[0];
+//		for (i = 0;i < n;i++) {
+//			
+//			if (arr[i] > max)
+//				max = arr[i];
+//			if (arr[i] < min)
+//				min = arr[i];
+//		}
+//		printf("max=%.1f ", max);
+//		printf("min=%.1f ", min);
+//		for (i = 0;i < n;i++) {
+//			sum += arr[i];
+//		}
+//		double ave = 0;
+//		ave = sum / n;
+//		printf("average=%.1f\n", ave);
+//	}
+//	return 0;
+//}
+//#include<stdio.h>
+//int main() {
+//	int n,i;
+//	double arr[1000];
+//	double sum, max, min, ave;
+//	while (scanf("%d", &n) != EOF) {
+//		sum = 0;
+//		for (i = 0;i < n;i++) {
+//			scanf("%lf", &arr[i]);
+//			if (i == 0) {
+//				max = arr[0];
+//				min = arr[0];
+//			}
+//			if (arr[i] > max)
+//				max = arr[i];
+//			if (arr[i] < min)
+//				min = arr[i];
+//			sum += arr[i];
+//		}
+//		ave = sum / n;
+//		printf("max=%.1f min=%.1f average=%.1f\n", max, min, ave);
+//	}
+//	return 0;
+//}
+//#include<stdio.h>
+//#include<math.h>
+//double Avage(double a[], int n) {
+//	double avage = 0;
+//	int i;
+//	for (i = 0;i < n;i++) {
+//		avage += a[i];
+//	}
+//	avage /= n;
+//	return avage;
+//}
+//int main() {
+//	int T = 0;
+//	int i, n,t;
+//	double x_, s, sum, sum1;
+//	while (scanf("%d", &T) != EOF) {
+//		double a[50];
+//		x_ = 0;
+//		sum = 0;
+//		for (t = 0;t < T;t++) {
+//			scanf("%d", &n);
+//			
+//			for (i = 0;i < n;i++) {
+//				scanf("%lf", &a[i]);
+//			}
+//			x_ = Avage(a, n);
+//			s = 0;
+//			sum1 = 0;
+//			for (i = 0;i < n;i++) {
+//				sum1 += pow((a[i] - x_), 2);
+//				s = (1.0 / n) * sum1;
+//			}
+//			printf("s^2=%.2f\n", s);
+//		}
+//	}
+//	
+//	return 0;
+//}
+//#include<stdio.h>
+//int Fibonacci(int n) {
+//	if (n == 1 || n == 2)
+//		return 1;
+//	else
+//		return Fibonacci(n - 2) + Fibonacci(n - 1);
+//}
+//int main() {
+//	int m = 0;
+//	int r;
+//	int n;
+//	while (scanf("%d", &m) != EOF) {
+//		n = 1;
+//		while (Fibonacci(n) < m)
+//			n++;
+//		printf("%d\n", n);
+//	}
+//	return 0;
+//}
 #include<stdio.h>
-int main(void) {
-    double a, b, c;
-    double x, d, sq, x1, x2, t;
-    while (scanf("%lf %lf %lf", &a, &b, &c) == 3) {
-        if (a == 0.0 && b == 0.0 && c == 0.0)
-            break;                        
-
-        if (a == 0.0) {
-            if (b == 0.0) {               
-                printf("Unanswered\n");
-            }
-            else {
-                x = -c / b;
-                printf("x1=%.2f x2=%.2f\n", x, x);
-            }
-            continue;
-        }
-
-        d = b * b - 4 * a * c;     
-        if (d < 0) {
-            printf("Unanswered\n");
-        }
-        else if (fabs(d) < 1e-9) {     
-            x = -b / (2 * a);
-            printf("x1=%.2f x2=%.2f\n", x, x);
-        }
-        else {
-            sq = sqrt(d);
-            x1 = (-b - sq) / (2 * a);
-            x2 = (-b + sq) / (2 * a);
-            if (x1 > x2) {
-                t = x1;
-                x1 = x2;
-                x2 = t;
-            }
-            printf("x1=%.2f x2=%.2f\n", x1, x2);
-        }
-    }
-    return 0;
+void print_arr(int arr[], int len) {
+	int i;
+	for (i = 0;i < len;i++) {
+		printf("%d ", arr[i]);
+	}
+	printf("\n");
+}
+void bubble_sort(int arr[], int len) {
+	int i, j;
+	for (i = 0;i < len - 1;i++) {
+		for (j = 0;j < len - 1 - i;j++) {
+			if (arr[j] > arr[j + 1]) {
+				int t = arr[j];
+				arr[j] = arr[j + 1];
+				arr[j + 1] = t;
+			}
+		}
+	}
+}
+int main(){
+	int arr[100];
+	int n , i;
+	while (scanf("%d", &n)==1&&n!=0) {
+		for (i = 0;i < n;i++) {
+			scanf("%d", &arr[i]);
+		}
+		bubble_sort(arr, n);
+		print_arr(arr, n);
+	}
+	return 0;
 }
