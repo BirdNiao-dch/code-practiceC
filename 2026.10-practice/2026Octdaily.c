@@ -110,29 +110,39 @@
 //    }
 //    return 0;
 //}
+//#include<stdio.h>
+//#include<stdbool.h>
+//bool is_leap_year(int y) {
+//    if ((y % 4 == 0 && y % 100 != 0) || (y % 400 == 0) ){
+//        return true;
+//    }
+//    else {
+//        return false;
+//    }
+//}
+//int get_days_of_month(int y, int m) {
+//    int day[] = {0,31,28,31,30,31,30,31,31,30,31,30,31};
+//    int d = day[m];
+//    if (is_leap_year(y) && m == 2) {
+//        d += 1;
+//    }
+//    return d;
+//}
+//int main() {
+//    int year = 0;
+//    int month = 0;
+//    scanf("%d%d", &year, &month);
+//    int day = get_days_of_month(year, month);
+//    printf("%d\n", day);
+//    return 0;
+//}
+////////////////指针学习
 #include<stdio.h>
-#include<stdbool.h>
-bool is_leap_year(int y) {
-    if ((y % 4 == 0 && y % 100 != 0) || (y % 400 == 0) ){
-        return true;
-    }
-    else {
-        return false;
-    }
-}
-int get_days_of_month(int y, int m) {
-    int day[] = {0,31,28,31,30,31,30,31,31,30,31,30,31};
-    int d = day[m];
-    if (is_leap_year(y) && m == 2) {
-        d += 1;
-    }
-    return d;
-}
 int main() {
-    int year = 0;
-    int month = 0;
-    scanf("%d%d", &year, &month);
-    int day = get_days_of_month(year, month);
-    printf("%d\n", day);
+    int a = 100;
+    int* p = &a;
+    printf("%d\n", *p);//*是解引用操作符，*p的意思是通过p里存放的地址，找到p指向的对象，也就是a，所以*p就是a
+    *p = 10;
+    printf("%d\n", a); 
     return 0;
-}
+}  
