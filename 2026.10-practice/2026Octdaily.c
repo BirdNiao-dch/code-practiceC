@@ -146,11 +146,32 @@
 //    printf("%d\n", a); 
 //    return 0;
 //}  
+//#include<stdio.h>
+//int main() {
+//    int a = 0x11223344;
+//    char* p = &a;
+//    *p = 0;
+//
+//    return 0;
+//}
+//#include<stdio.h>
+//int main() {
+//    int a = 0x11223344;
+//    int* pa = &a;
+//    char* pc = &a;
+//
+//    printf("pa  =%p\n", pa);
+//    printf("pa+1=%p\n", pa + 1);
+//
+//    printf("pc  =%p\n", pc);
+//    printf("pc+1=%p\n", pc + 1);
+//    return 0;
+//}
 #include<stdio.h>
 int main() {
-    int a = 0x11223344;
-    char* p = &a;
-    *p = 0;
-
+    char ch = 'w';
+    int a = 10;
+    void* pv1 = &ch;
+    void* pv2 = &a;
     return 0;
 }
