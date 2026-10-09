@@ -137,12 +137,20 @@
 //    return 0;
 //}
 ////////////////指针学习
+//#include<stdio.h>
+//int main() {
+//    int a = 100;
+//    int* p = &a;
+//    printf("%d\n", *p);//*是解引用操作符，*p的意思是通过p里存放的地址，找到p指向的对象，也就是a，所以*p就是a
+//    *p = 10;
+//    printf("%d\n", a); 
+//    return 0;
+//}  
 #include<stdio.h>
 int main() {
-    int a = 100;
-    int* p = &a;
-    printf("%d\n", *p);//*是解引用操作符，*p的意思是通过p里存放的地址，找到p指向的对象，也就是a，所以*p就是a
-    *p = 10;
-    printf("%d\n", a); 
+    int a = 0x11223344;
+    char* p = &a;
+    *p = 0;
+
     return 0;
-}  
+}
