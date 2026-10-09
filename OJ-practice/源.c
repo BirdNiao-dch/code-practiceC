@@ -1203,37 +1203,54 @@
 //	}
 //	return 0;
 //}
-#include <stdio.h>
-
-int main() {
-    int n;
-    int arr[30][30]; 
-    int first_case = 1;
-
-    while (scanf("%d", &n) != EOF) {
-        if (first_case == 0) {
-            printf("\n");
-        }
-        first_case = 0;
-
-        for (int i = 0; i < n; i++) {
-            arr[i][0] = 1; 
-            arr[i][i] = 1;
-            for (int j = 1; j < i; j++) {
-                arr[i][j] = arr[i - 1][j - 1] + arr[i - 1][j];
-            }
-        }
-
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j <= i; j++) {
-                printf("%d", arr[i][j]);
-
-                if (j < i) {
-                    printf("\t");
-                }
-            }
-            printf("\n");
-        }
-    }
-    return 0;
-}
+//#include <stdio.h>
+//
+//int main() {
+//    int n;
+//    int arr[30][30]; 
+//    int first_case = 1;
+//
+//    while (scanf("%d", &n) != EOF) {
+//        if (first_case == 0) {
+//            printf("\n");
+//        }
+//        first_case = 0;
+//
+//        for (int i = 0; i < n; i++) {
+//            arr[i][0] = 1; 
+//            arr[i][i] = 1;
+//            for (int j = 1; j < i; j++) {
+//                arr[i][j] = arr[i - 1][j - 1] + arr[i - 1][j];
+//            }
+//        }
+//
+//        for (int i = 0; i < n; i++) {
+//            for (int j = 0; j <= i; j++) {
+//                printf("%d", arr[i][j]);
+//
+//                if (j < i) {
+//                    printf("\t");
+//                }
+//            }
+//            printf("\n");
+//        }
+//    }
+//    return 0;
+//}
+//#include<stdio.h>
+//int main() {
+//	int i,x,y,z;
+//	int sum = 0;
+//
+//	for (i = 100;i < 1000;i++) {
+//		x = i % 10;
+//		y = (i / 10) % 10;
+//		z = (i / 100) % 10;
+//		sum = x * x * x + y * y * y + z * z * z;
+//		if (i == sum) {
+//			printf("%d\n", i);
+//		}
+//	}
+//	
+//	return 0;
+//}
