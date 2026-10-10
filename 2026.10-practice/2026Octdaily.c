@@ -167,11 +167,37 @@
 //    printf("pc+1=%p\n", pc + 1);
 //    return 0;
 //}
-#include<stdio.h>
-int main() {
-    char ch = 'w';
-    int a = 10;
-    void* pv1 = &ch;
-    void* pv2 = &a;
+//#include<stdio.h>
+//int main() {
+//    char ch = 'w';
+//    int a = 10;
+//    void* pv1 = &ch;
+//    void* pv2 = &a;
+//    return 0;
+//}
+//#include <stdio.h>
+////指针+ -整数
+//
+//int main()
+//{
+//    int arr[10] = { 1,2,3,4,5,6,7,8,9,10 };
+//    int* p = &arr[0];
+//    int i = 0;
+//    int sz = sizeof(arr) / sizeof(arr[0]);
+//    for (i = 0; i < sz; i++)
+//    {
+//        printf("%d ", *(p + i));//p+i 这⾥就是指针+整数
+//    }
+//    return 0;
+//}
+#include <stdio.h>
+#include <stddef.h>
+
+int main(void) {
+    int a[4] = { 1,2,3,4 };
+    int* p = &a[1]; // 指向 a[1]
+    int* q = &a[3]; // 指向 a[3]
+    printf("q - p = %td\n", q - p); // 输出 2 (元素个数差)
+    if (p < q) printf("p < q (valid only because p and q point into same array)\n");
     return 0;
 }
